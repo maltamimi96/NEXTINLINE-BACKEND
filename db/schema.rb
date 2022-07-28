@@ -10,9 +10,41 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_07_27_182837) do
+ActiveRecord::Schema[7.0].define(version: 2022_07_28_090646) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "availabilities", force: :cascade do |t|
+    t.time "available_at"
+    t.bigint "barber_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["barber_id"], name: "index_availabilities_on_barber_id"
+  end
+
+  create_table "barbers", force: :cascade do |t|
+    t.string "first_name"
+    t.string "last_name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.bigint "store_id", null: false
+    t.index ["store_id"], name: "index_barbers_on_store_id"
+  end
+
+  create_table "bookings", force: :cascade do |t|
+    t.bigint "store_id", null: false
+    t.bigint "barber_id", null: false
+    t.bigint "availability_id", null: false
+    t.bigint "client_id", null: false
+    t.bigint "hair_style_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["availability_id"], name: "index_bookings_on_availability_id"
+    t.index ["barber_id"], name: "index_bookings_on_barber_id"
+    t.index ["client_id"], name: "index_bookings_on_client_id"
+    t.index ["hair_style_id"], name: "index_bookings_on_hair_style_id"
+    t.index ["store_id"], name: "index_bookings_on_store_id"
+  end
 
   create_table "categories", force: :cascade do |t|
     t.string "name"
@@ -29,6 +61,13 @@ ActiveRecord::Schema[7.0].define(version: 2022_07_27_182837) do
     t.datetime "updated_at", null: false
     t.bigint "store_id", null: false
     t.index ["store_id"], name: "index_clients_on_store_id"
+  end
+
+  create_table "hair_styles", force: :cascade do |t|
+    t.string "name"
+    t.integer "duration"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "questions", force: :cascade do |t|
@@ -60,6 +99,13 @@ ActiveRecord::Schema[7.0].define(version: 2022_07_27_182837) do
     t.boolean "admin", default: false
   end
 
+  add_foreign_key "availabilities", "barbers"
+  add_foreign_key "barbers", "stores"
+  add_foreign_key "bookings", "availabilities"
+  add_foreign_key "bookings", "barbers"
+  add_foreign_key "bookings", "clients"
+  add_foreign_key "bookings", "hair_styles"
+  add_foreign_key "bookings", "stores"
   add_foreign_key "clients", "stores"
   add_foreign_key "questions", "categories"
   add_foreign_key "questions", "users"

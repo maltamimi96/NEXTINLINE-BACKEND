@@ -19905,3 +19905,248 @@ FOREIGN KEY ("store_id")
   [1m[36mTRANSACTION (3.5ms)[0m  [1m[35mCOMMIT[0m
   [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(1352528056989791325)[0m
   [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1352528056989791325)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateBarbers (20220728075320)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (30.0ms)[0m  [1m[35mCREATE TABLE "barbers" ("id" bigserial primary key, "first_name" character varying, "last_name" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220728075320"]]
+  [1m[36mTRANSACTION (3.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(1352528056989791325)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mUser Count (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "tim"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "s90six@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (1.0ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at", "admin") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "tim"], ["email", "s90six@gmail.com"], ["password_digest", "[FILTERED]"], ["created_at", "2022-07-28 08:45:03.889743"], ["updated_at", "2022-07-28 08:45:03.889743"], ["admin", true]]
+  [1m[36mTRANSACTION (3.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mStore Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "stores"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mStore Create (2.1ms)[0m  [1m[32mINSERT INTO "stores" ("name", "location", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Ministry Barbers"], ["location", "219 Miller Rd, Bass Hill NSW 2197"], ["user_id", 1], ["created_at", "2022-07-28 08:45:03.959784"], ["updated_at", "2022-07-28 08:45:03.959784"]]
+  [1m[36mTRANSACTION (3.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1352528056989791325)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateAvailabilities (20220728085556)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (12.8ms)[0m  [1m[35mCREATE TABLE "availabilities" ("id" bigserial primary key, "available_at" time, "barber_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_ee0adaeff0"
+FOREIGN KEY ("barber_id")
+  REFERENCES "barbers" ("id")
+)[0m
+  [1m[35m (6.0ms)[0m  [1m[35mCREATE INDEX "index_availabilities_on_barber_id" ON "availabilities" ("barber_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220728085556"]]
+  [1m[36mTRANSACTION (2.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(1352528056989791325)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1352528056989791325)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateHairStyles (20220728085910)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (20.4ms)[0m  [1m[35mCREATE TABLE "hair_styles" ("id" bigserial primary key, "name" character varying, "duration" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220728085910"]]
+  [1m[36mTRANSACTION (3.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(1352528056989791325)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1352528056989791325)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateBookings (20220728090148)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (15.4ms)[0m  [1m[35mCREATE TABLE "bookings" ("id" bigserial primary key, "store_id" bigint NOT NULL, "barber_id" bigint NOT NULL, "availability_id" bigint NOT NULL, "client_id" bigint NOT NULL, "hair_style_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_469339cd03"
+FOREIGN KEY ("store_id")
+  REFERENCES "stores" ("id")
+, CONSTRAINT "fk_rails_cd94ca1ce7"
+FOREIGN KEY ("barber_id")
+  REFERENCES "barbers" ("id")
+, CONSTRAINT "fk_rails_e6f7e4a054"
+FOREIGN KEY ("availability_id")
+  REFERENCES "availabilities" ("id")
+, CONSTRAINT "fk_rails_2c503ea743"
+FOREIGN KEY ("client_id")
+  REFERENCES "clients" ("id")
+, CONSTRAINT "fk_rails_fb478f7388"
+FOREIGN KEY ("hair_style_id")
+  REFERENCES "hair_styles" ("id")
+)[0m
+  [1m[35m (6.5ms)[0m  [1m[35mCREATE INDEX "index_bookings_on_store_id" ON "bookings" ("store_id")[0m
+  [1m[35m (6.1ms)[0m  [1m[35mCREATE INDEX "index_bookings_on_barber_id" ON "bookings" ("barber_id")[0m
+  [1m[35m (6.8ms)[0m  [1m[35mCREATE INDEX "index_bookings_on_availability_id" ON "bookings" ("availability_id")[0m
+  [1m[35m (6.9ms)[0m  [1m[35mCREATE INDEX "index_bookings_on_client_id" ON "bookings" ("client_id")[0m
+  [1m[35m (8.1ms)[0m  [1m[35mCREATE INDEX "index_bookings_on_hair_style_id" ON "bookings" ("hair_style_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220728090148"]]
+  [1m[36mTRANSACTION (4.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(1352528056989791325)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1352528056989791325)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddStoreToBarber (20220728090646)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.9ms)[0m  [1m[35mALTER TABLE "barbers" ADD "store_id" bigint NOT NULL[0m
+  [1m[35m (7.5ms)[0m  [1m[35mCREATE INDEX "index_barbers_on_store_id" ON "barbers" ("store_id")[0m
+  [1m[35m (2.0ms)[0m  [1m[35mALTER TABLE "barbers" ADD CONSTRAINT "fk_rails_9c1b9fdd19"
+FOREIGN KEY ("store_id")
+  REFERENCES "stores" ("id")
+[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220728090646"]]
+  [1m[36mTRANSACTION (3.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(1352528056989791325)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mUser Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[36mStore Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "stores"[0m
+  [1m[36mBarber Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "barbers"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBarber Create (0.5ms)[0m  [1m[32mINSERT INTO "barbers" ("first_name", "last_name", "created_at", "updated_at", "store_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["first_name", "Jack"], ["last_name", "Jones"], ["created_at", "2022-07-28 09:19:01.767183"], ["updated_at", "2022-07-28 09:19:01.767183"], ["store_id", 1]]
+  [1m[36mTRANSACTION (6.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBarber Create (0.2ms)[0m  [1m[32mINSERT INTO "barbers" ("first_name", "last_name", "created_at", "updated_at", "store_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["first_name", "John"], ["last_name", "Doe"], ["created_at", "2022-07-28 09:19:01.777005"], ["updated_at", "2022-07-28 09:19:01.777005"], ["store_id", 1]]
+  [1m[36mTRANSACTION (2.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mClient Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "clients"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mClient Create (0.4ms)[0m  [1m[32mINSERT INTO "clients" ("first_name", "last_name", "phone", "email", "created_at", "updated_at", "store_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["first_name", "Bald"], ["last_name", "Man"], ["phone", "12345678"], ["email", "baldman@gmail.com"], ["created_at", "2022-07-28 09:19:01.807255"], ["updated_at", "2022-07-28 09:19:01.807255"], ["store_id", 1]]
+  [1m[36mTRANSACTION (3.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mClient Create (0.2ms)[0m  [1m[32mINSERT INTO "clients" ("first_name", "last_name", "phone", "email", "created_at", "updated_at", "store_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["first_name", "Hairy"], ["last_name", "Kid"], ["phone", "87654321"], ["email", "hairykid@gmail.com"], ["created_at", "2022-07-28 09:19:01.812791"], ["updated_at", "2022-07-28 09:19:01.812791"], ["store_id", 1]]
+  [1m[36mTRANSACTION (2.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mClient Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "clients"[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mUser Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[36mStore Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "stores"[0m
+  [1m[36mBarber Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "barbers"[0m
+  [1m[36mClient Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "clients"[0m
+  [1m[36mCACHE Client Count (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "clients"[0m
+  [1m[36mHairStyle Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "hair_styles"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mHairStyle Create (0.3ms)[0m  [1m[32mINSERT INTO "hair_styles" ("name", "duration", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "skin fade"], ["duration", 25], ["created_at", "2022-07-28 09:19:46.085107"], ["updated_at", "2022-07-28 09:19:46.085107"]]
+  [1m[36mTRANSACTION (3.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mHairStyle Create (0.1ms)[0m  [1m[32mINSERT INTO "hair_styles" ("name", "duration", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "buzz cut"], ["duration", 20], ["created_at", "2022-07-28 09:19:46.090971"], ["updated_at", "2022-07-28 09:19:46.090971"]]
+  [1m[36mTRANSACTION (2.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mAvailability Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "availabilities"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBarber Load (0.1ms)[0m  [1m[34mSELECT "barbers".* FROM "barbers" WHERE "barbers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAvailability Create (1.6ms)[0m  [1m[32mINSERT INTO "availabilities" ("available_at", "barber_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["available_at", "01:00:00"], ["barber_id", 1], ["created_at", "2022-07-28 09:19:46.138499"], ["updated_at", "2022-07-28 09:19:46.138499"]]
+  [1m[36mTRANSACTION (3.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBarber Load (0.1ms)[0m  [1m[34mSELECT "barbers".* FROM "barbers" WHERE "barbers"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mAvailability Create (0.2ms)[0m  [1m[32mINSERT INTO "availabilities" ("available_at", "barber_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["available_at", "01:00:00"], ["barber_id", 2], ["created_at", "2022-07-28 09:19:46.147887"], ["updated_at", "2022-07-28 09:19:46.147887"]]
+  [1m[36mTRANSACTION (2.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mBooking Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "bookings"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBarber Load (0.1ms)[0m  [1m[34mSELECT "barbers".* FROM "barbers" WHERE "barbers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAvailability Load (0.1ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities" WHERE "availabilities"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHairStyle Load (0.1ms)[0m  [1m[34mSELECT "hair_styles".* FROM "hair_styles" WHERE "hair_styles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBooking Create (1.0ms)[0m  [1m[32mINSERT INTO "bookings" ("store_id", "barber_id", "availability_id", "client_id", "hair_style_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["store_id", 1], ["barber_id", 1], ["availability_id", 1], ["client_id", 1], ["hair_style_id", 1], ["created_at", "2022-07-28 09:19:46.206631"], ["updated_at", "2022-07-28 09:19:46.206631"]]
+  [1m[36mTRANSACTION (3.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBarber Load (0.1ms)[0m  [1m[34mSELECT "barbers".* FROM "barbers" WHERE "barbers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAvailability Load (0.1ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities" WHERE "availabilities"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHairStyle Load (0.1ms)[0m  [1m[34mSELECT "hair_styles".* FROM "hair_styles" WHERE "hair_styles"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBooking Create (0.2ms)[0m  [1m[32mINSERT INTO "bookings" ("store_id", "barber_id", "availability_id", "client_id", "hair_style_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["store_id", 1], ["barber_id", 1], ["availability_id", 2], ["client_id", 1], ["hair_style_id", 2], ["created_at", "2022-07-28 09:19:46.217207"], ["updated_at", "2022-07-28 09:19:46.217207"]]
+  [1m[36mTRANSACTION (3.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mHairStyle Load (0.2ms)[0m  [1m[34mSELECT "hair_styles".* FROM "hair_styles"[0m
+  [1m[36mBooking Load (0.7ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings"[0m
+Started POST "/%20/bookings/1" for ::1 at 2022-07-29 02:55:19 +1000
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [POST] "/%20/bookings/1"):
+  
+Started POST "/bookings/1" for ::1 at 2022-07-29 02:55:39 +1000
+  
+ActionController::RoutingError (No route matches [POST] "/bookings/1"):
+  
+Started GET "/bookings/1" for ::1 at 2022-07-29 02:55:46 +1000
+Processing by BookingsController#show as */*
+  Parameters: {"user_id"=>1, "category_id"=>1, "title"=>"From Post Man 4", "body"=>"This Came From Post Man", "id"=>"1", "booking"=>{}}
+  [1m[36mBooking Load (0.7ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:48:in `set_booking'
+Completed 500 Internal Server Error in 102ms (ActiveRecord: 4.0ms | Allocations: 22281)
+
+
+  
+NoMethodError (undefined method `transform_booking' for #<Booking id: 1, store_id: 1, barber_id: 1, availability_id: 1, client_id: 1, hair_style_id: 1, created_at: "2022-07-28 09:19:46.206631000 +0000", updated_at: "2022-07-28 09:19:46.206631000 +0000">):
+  
+app/controllers/bookings_controller.rb:14:in `show'
+Started GET "/bookings/1" for ::1 at 2022-07-29 02:56:17 +1000
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BookingsController#show as */*
+  Parameters: {"user_id"=>1, "category_id"=>1, "title"=>"From Post Man 4", "body"=>"This Came From Post Man", "id"=>"1", "booking"=>{}}
+  [1m[36mBooking Load (0.4ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:48:in `set_booking'
+Completed 500 Internal Server Error in 55ms (ActiveRecord: 2.9ms | Allocations: 23271)
+
+
+  
+NoMethodError (undefined method `user' for #<Booking id: 1, store_id: 1, barber_id: 1, availability_id: 1, client_id: 1, hair_style_id: 1, created_at: "2022-07-28 09:19:46.206631000 +0000", updated_at: "2022-07-28 09:19:46.206631000 +0000">
+Did you mean?  super):
+  
+app/models/booking.rb:10:in `transform_booking'
+app/controllers/bookings_controller.rb:14:in `show'
+Started GET "/bookings/1" for ::1 at 2022-07-29 02:58:06 +1000
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BookingsController#show as */*
+  Parameters: {"user_id"=>1, "category_id"=>1, "title"=>"From Post Man 4", "body"=>"This Came From Post Man", "id"=>"1", "booking"=>{}}
+  [1m[36mBooking Load (0.4ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:48:in `set_booking'
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/booking.rb:10:in `transform_booking'
+  [1m[36mBarber Load (0.3ms)[0m  [1m[34mSELECT "barbers".* FROM "barbers" WHERE "barbers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/booking.rb:11:in `transform_booking'
+Completed 500 Internal Server Error in 142ms (ActiveRecord: 5.9ms | Allocations: 39330)
+
+
+  
+NoMethodError (undefined method `name' for #<Barber id: 1, first_name: "Jack", last_name: "Jones", created_at: "2022-07-28 09:19:01.767183000 +0000", updated_at: "2022-07-28 09:19:01.767183000 +0000", store_id: 1>):
+  
+app/models/booking.rb:11:in `transform_booking'
+app/controllers/bookings_controller.rb:14:in `show'
+Started GET "/bookings/1" for ::1 at 2022-07-29 02:59:07 +1000
+Processing by BookingsController#show as */*
+  Parameters: {"user_id"=>1, "category_id"=>1, "title"=>"From Post Man 4", "body"=>"This Came From Post Man", "id"=>"1", "booking"=>{}}
+  [1m[36mBooking Load (0.1ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:48:in `set_booking'
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/booking.rb:10:in `transform_booking'
+  [1m[36mBarber Load (0.1ms)[0m  [1m[34mSELECT "barbers".* FROM "barbers" WHERE "barbers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/booking.rb:11:in `transform_booking'
+  [1m[36mAvailability Load (0.3ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities" WHERE "availabilities"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/booking.rb:12:in `transform_booking'
+Completed 500 Internal Server Error in 83ms (ActiveRecord: 7.9ms | Allocations: 20758)
+
+
+  
+NoMethodError (undefined method `last_name' for 1:Integer):
+  
+app/models/booking.rb:13:in `transform_booking'
+app/controllers/bookings_controller.rb:14:in `show'
+Started GET "/bookings/1" for ::1 at 2022-07-29 03:01:23 +1000
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BookingsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mBooking Load (0.4ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:48:in `set_booking'
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/booking.rb:10:in `transform_booking'
+  [1m[36mBarber Load (0.2ms)[0m  [1m[34mSELECT "barbers".* FROM "barbers" WHERE "barbers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/booking.rb:11:in `transform_booking'
+  [1m[36mAvailability Load (0.2ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities" WHERE "availabilities"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/booking.rb:12:in `transform_booking'
+  [1m[36mClient Load (0.4ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/booking.rb:13:in `transform_booking'
+  [1m[36mHairStyle Load (0.2ms)[0m  [1m[34mSELECT "hair_styles".* FROM "hair_styles" WHERE "hair_styles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/booking.rb:14:in `transform_booking'
+Completed 200 OK in 244ms (Views: 0.4ms | ActiveRecord: 15.0ms | Allocations: 62493)
+
+

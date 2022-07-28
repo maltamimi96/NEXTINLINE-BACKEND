@@ -11,24 +11,49 @@ question_category = ["fiqh","aqeeda"]
 
 if User.count==0
     User.create(username:"tim",email:"s90six@gmail.com",password: "pword1",password_confirmation:"pword1",admin: true)
-    # User.create(username:"tim2",email:"s91six@gmail.com",password: "pword2",password_confirmation:"pword2")
-    # User.create(username:"tim3",email:"s92six@gmail.com",password: "pword3",password_confirmation:"pword3")
-    # User.create(username:"tim4",email:"s93six@gmail.com",password: "pword4",password_confirmation:"pword4")
+end
+
+if Store.count==0
+    Store.create(name:"Ministry Barbers",location:"219 Miller Rd, Bass Hill NSW 2197",user_id:1)
+end
+
+if Barber.count==0
+    Barber.create(first_name:"Jack",last_name:"Jones",store_id:1)
+    Barber.create(first_name:"John",last_name:"Doe",store_id:1)
+end
+
+if Client.count==0
+    Client.create(first_name:"Bald",last_name:"Man",phone:"12345678",email:"baldman@gmail.com",store_id:1)
+    Client.create(first_name:"Hairy",last_name:"Kid",phone:"87654321",email:"hairykid@gmail.com",store_id:1)
+end
+
+if Client.count==0
+    Client.create(first_name:"Bald",last_name:"Man",phone:"12345678",email:"baldman@gmail.com",store_id:1)
+    Client.create(first_name:"Hairy",last_name:"Kid",phone:"87654321",email:"hairykid@gmail.com",store_id:1)
+end
+
+if HairStyle.count==0
+    HairStyle.create(name:"skin fade",duration:25)
+    HairStyle.create(name:"buzz cut",duration:20)
 end
 
 
-if Category.all.length == 0
-    question_category.each do |category|
-        Category.create(name: category)
-        puts "created #{category} category"
+if Availability.count==0
+    Availability.create(available_at:"1:00",barber_id:1)
+    Availability.create(available_at:"1:00",barber_id:2)
+end
+
+
+if Booking.count==0
+    Booking.create(store_id:1,barber_id:1,availability_id:1,client_id:1,hair_style_id:1)
+    Booking.create(store_id:1,barber_id:1,availability_id:2,client_id:1,hair_style_id:2)
+
 end
 
 
 
-if Question.all.length == 0
-    Question.create(user_id:1,category_id:1,title:"No Title 1",body:"No Body 1")
-    # Question.create(user_id:2,category_id:1,title:"No Title 2",body:"No Body 2")
 
-end
 
-end    
+
+
+
