@@ -20150,3 +20150,316 @@ Processing by BookingsController#show as */*
 Completed 200 OK in 244ms (Views: 0.4ms | ActiveRecord: 15.0ms | Allocations: 62493)
 
 
+Started GET "/bookings/1" for ::1 at 2022-07-29 03:06:30 +1000
+Processing by BookingsController#show as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms | Allocations: 275)
+
+
+  
+SyntaxError (/mnt/c/Users/guap/Desktop/My Projects/Next in Line/Back-End/NIL-Back-End/NEXTINLINE-BACKEND/app/models/booking.rb:11: syntax error, unexpected unary+, expecting '}'
+...er_id: self.barber.first_name +self.barber.last_name ,
+...                              ^
+/mnt/c/Users/guap/Desktop/My Projects/Next in Line/Back-End/NIL-Back-End/NEXTINLINE-BACKEND/app/models/booking.rb:11: syntax error, unexpected ',', expecting `end'
+...t_name +self.barber.last_name ,
+...                              ^
+/mnt/c/Users/guap/Desktop/My Projects/Next in Line/Back-End/NIL-Back-End/NEXTINLINE-BACKEND/app/models/booking.rb:13: syntax error, unexpected label, expecting '='
+      client_id: self.client.last_name,
+      ^~~~~~~~~~
+/mnt/c/Users/guap/Desktop/My Projects/Next in Line/Back-End/NIL-Back-End/NEXTINLINE-BACKEND/app/models/booking.rb:14: syntax error, unexpected label, expecting '='
+      hair_style_id: self.hair_style.name,
+      ^~~~~~~~~~~~~~
+/mnt/c/Users/guap/Desktop/My Projects/Next in Line/Back-End/NIL-Back-End/NEXTINLINE-BACKEND/app/models/booking.rb:15: syntax error, unexpected '}', expecting '='
+    }
+    ^
+):
+  
+app/models/booking.rb:11: syntax error, unexpected unary+, expecting '}'
+app/models/booking.rb:11: syntax error, unexpected ',', expecting `end'
+app/models/booking.rb:13: syntax error, unexpected label, expecting '='
+app/models/booking.rb:14: syntax error, unexpected label, expecting '='
+app/models/booking.rb:15: syntax error, unexpected '}', expecting '='
+app/models/booking.rb:11: syntax error, unexpected unary+, expecting '}'
+app/models/booking.rb:11: syntax error, unexpected ',', expecting `end'
+app/models/booking.rb:13: syntax error, unexpected label, expecting '='
+app/models/booking.rb:14: syntax error, unexpected label, expecting '='
+app/models/booking.rb:15: syntax error, unexpected '}', expecting '='
+app/controllers/bookings_controller.rb:48:in `set_booking'
+Started GET "/bookings/1" for ::1 at 2022-07-29 03:06:41 +1000
+Processing by BookingsController#show as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms | Allocations: 261)
+
+
+  
+SyntaxError (/mnt/c/Users/guap/Desktop/My Projects/Next in Line/Back-End/NIL-Back-End/NEXTINLINE-BACKEND/app/models/booking.rb:11: syntax error, unexpected ',', expecting =>
+..._name , self.barber.last_name ,
+...                              ^
+/mnt/c/Users/guap/Desktop/My Projects/Next in Line/Back-End/NIL-Back-End/NEXTINLINE-BACKEND/app/models/booking.rb:13: syntax error, unexpected label, expecting '='
+      client_id: self.client.last_name,
+      ^~~~~~~~~~
+/mnt/c/Users/guap/Desktop/My Projects/Next in Line/Back-End/NIL-Back-End/NEXTINLINE-BACKEND/app/models/booking.rb:14: syntax error, unexpected label, expecting '='
+      hair_style_id: self.hair_style.name,
+      ^~~~~~~~~~~~~~
+/mnt/c/Users/guap/Desktop/My Projects/Next in Line/Back-End/NIL-Back-End/NEXTINLINE-BACKEND/app/models/booking.rb:15: syntax error, unexpected '}', expecting '='
+    }
+    ^
+):
+  
+app/models/booking.rb:11: syntax error, unexpected ',', expecting =>
+app/models/booking.rb:13: syntax error, unexpected label, expecting '='
+app/models/booking.rb:14: syntax error, unexpected label, expecting '='
+app/models/booking.rb:15: syntax error, unexpected '}', expecting '='
+app/models/booking.rb:11: syntax error, unexpected ',', expecting =>
+app/models/booking.rb:13: syntax error, unexpected label, expecting '='
+app/models/booking.rb:14: syntax error, unexpected label, expecting '='
+app/models/booking.rb:15: syntax error, unexpected '}', expecting '='
+app/controllers/bookings_controller.rb:48:in `set_booking'
+Started GET "/bookings/1" for ::1 at 2022-07-29 03:07:09 +1000
+Processing by BookingsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:48:in `set_booking'
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/booking.rb:10:in `transform_booking'
+  [1m[36mBarber Load (0.2ms)[0m  [1m[34mSELECT "barbers".* FROM "barbers" WHERE "barbers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/booking.rb:11:in `transform_booking'
+  [1m[36mAvailability Load (0.2ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities" WHERE "availabilities"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/booking.rb:14:in `transform_booking'
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/booking.rb:15:in `transform_booking'
+  [1m[36mHairStyle Load (0.2ms)[0m  [1m[34mSELECT "hair_styles".* FROM "hair_styles" WHERE "hair_styles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/booking.rb:16:in `transform_booking'
+Completed 200 OK in 138ms (Views: 0.5ms | ActiveRecord: 11.3ms | Allocations: 31670)
+
+
+Started GET "/bookings/1" for ::1 at 2022-07-29 03:07:24 +1000
+Processing by BookingsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:48:in `set_booking'
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/booking.rb:10:in `transform_booking'
+  [1m[36mBarber Load (0.2ms)[0m  [1m[34mSELECT "barbers".* FROM "barbers" WHERE "barbers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/booking.rb:11:in `transform_booking'
+  [1m[36mAvailability Load (0.1ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities" WHERE "availabilities"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/booking.rb:12:in `transform_booking'
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/booking.rb:13:in `transform_booking'
+  [1m[36mHairStyle Load (0.1ms)[0m  [1m[34mSELECT "hair_styles".* FROM "hair_styles" WHERE "hair_styles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/booking.rb:14:in `transform_booking'
+Completed 200 OK in 139ms (Views: 0.6ms | ActiveRecord: 11.6ms | Allocations: 31531)
+
+
+Started GET "/bookings/2" for ::1 at 2022-07-29 03:07:32 +1000
+Processing by BookingsController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:48:in `set_booking'
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/booking.rb:10:in `transform_booking'
+  [1m[36mBarber Load (0.2ms)[0m  [1m[34mSELECT "barbers".* FROM "barbers" WHERE "barbers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/booking.rb:11:in `transform_booking'
+  [1m[36mAvailability Load (0.1ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities" WHERE "availabilities"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/booking.rb:12:in `transform_booking'
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/booking.rb:13:in `transform_booking'
+  [1m[36mHairStyle Load (0.2ms)[0m  [1m[34mSELECT "hair_styles".* FROM "hair_styles" WHERE "hair_styles"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/booking.rb:14:in `transform_booking'
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 1.0ms | Allocations: 3778)
+
+
+Started GET "/bookings/2" for ::1 at 2022-07-29 03:13:14 +1000
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BookingsController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mBooking Load (0.3ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:48:in `set_booking'
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/booking.rb:10:in `transform_booking'
+  [1m[36mBarber Load (0.2ms)[0m  [1m[34mSELECT "barbers".* FROM "barbers" WHERE "barbers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/booking.rb:11:in `transform_booking'
+  [1m[36mAvailability Load (0.2ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities" WHERE "availabilities"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/booking.rb:12:in `transform_booking'
+  [1m[36mClient Load (0.3ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/booking.rb:13:in `transform_booking'
+  [1m[36mHairStyle Load (0.2ms)[0m  [1m[34mSELECT "hair_styles".* FROM "hair_styles" WHERE "hair_styles"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/booking.rb:14:in `transform_booking'
+Completed 200 OK in 183ms (Views: 0.3ms | ActiveRecord: 12.7ms | Allocations: 62428)
+
+
+Started GET "/bookings/3" for ::1 at 2022-07-29 03:14:05 +1000
+Processing by BookingsController#show as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:48:in `set_booking'
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms | Allocations: 627)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Booking with 'id'=3):
+  
+app/controllers/bookings_controller.rb:48:in `set_booking'
+Started GET "/bookings/1" for ::1 at 2022-07-29 03:14:11 +1000
+Processing by BookingsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mBooking Load (0.3ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:48:in `set_booking'
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/booking.rb:10:in `transform_booking'
+  [1m[36mBarber Load (0.1ms)[0m  [1m[34mSELECT "barbers".* FROM "barbers" WHERE "barbers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/booking.rb:11:in `transform_booking'
+  [1m[36mAvailability Load (0.1ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities" WHERE "availabilities"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/booking.rb:12:in `transform_booking'
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/booking.rb:13:in `transform_booking'
+  [1m[36mHairStyle Load (0.1ms)[0m  [1m[34mSELECT "hair_styles".* FROM "hair_styles" WHERE "hair_styles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/booking.rb:14:in `transform_booking'
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 0.9ms | Allocations: 3764)
+
+
+Started GET "/stores" for ::1 at 2022-07-29 03:14:44 +1000
+Processing by StoresController#index as */*
+  [1m[36mStore Load (0.3ms)[0m  [1m[34mSELECT "stores".* FROM "stores"[0m
+  ↳ app/controllers/stores_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.3ms | Allocations: 1180)
+
+
+Started GET "/clients" for ::1 at 2022-07-29 03:15:07 +1000
+Processing by ClientsController#index as */*
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  ↳ app/controllers/clients_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.2ms | Allocations: 1256)
+
+
+Started GET "/ws" for ::1 at 2022-07-29 15:16:28 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for ::1 at 2022-07-29 15:16:35 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for ::1 at 2022-07-29 15:16:40 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for ::1 at 2022-07-29 15:16:49 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for ::1 at 2022-07-29 15:17:06 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for ::1 at 2022-07-29 15:17:39 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for ::1 at 2022-07-29 15:18:44 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for ::1 at 2022-07-29 15:20:52 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/" for ::1 at 2022-07-29 15:22:19 +1000
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/tim96/.rbenv/versions/3.0.3/lib/ruby/gems/3.0.0/gems/railties-7.0.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/tim96/.rbenv/versions/3.0.3/lib/ruby/gems/3.0.0/gems/railties-7.0.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 6.5ms | Allocations: 724)
+Completed 200 OK in 68ms (Views: 22.2ms | ActiveRecord: 0.0ms | Allocations: 6192)
+
+
+Started GET "//availabilitys" for ::1 at 2022-07-29 15:22:22 +1000
+  
+ActionController::RoutingError (uninitialized constant AvailabilitysController
+Did you mean?  AvailabilitiesController):
+  
+Started GET "/favicon.ico" for ::1 at 2022-07-29 15:22:23 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/availabilitys" for ::1 at 2022-07-29 15:22:30 +1000
+  
+ActionController::RoutingError (uninitialized constant AvailabilitysController
+Did you mean?  AvailabilitiesController):
+  
+Started GET "/availabilitys" for ::1 at 2022-07-29 15:22:39 +1000
+  
+ActionController::RoutingError (uninitialized constant AvailabilitysController
+Did you mean?  AvailabilitiesController):
+  
+Started GET "/availabilities" for ::1 at 2022-07-29 15:22:58 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/availabilities"):
+  
+Started GET "/barber" for ::1 at 2022-07-29 15:24:38 +1000
+  
+ActionController::RoutingError (uninitialized constant BarberController
+Did you mean?  BarbersController):
+  
+Started GET "/barbers" for ::1 at 2022-07-29 15:24:41 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/barbers"):
+  
+Started GET "/barbers" for ::1 at 2022-07-29 15:24:57 +1000
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/barbers"):
+  
+Started GET "/barber" for ::1 at 2022-07-29 15:25:06 +1000
+  
+ActionController::RoutingError (uninitialized constant BarberController
+Did you mean?  BarbersController):
+  
+Started GET "/ws" for ::1 at 2022-07-29 15:25:09 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/bookings" for ::1 at 2022-07-29 15:25:26 +1000
+Processing by BookingsController#index as HTML
+  [1m[36mBooking Load (0.4ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings"[0m
+  ↳ app/controllers/bookings_controller.rb:8:in `index'
+Completed 200 OK in 64ms (Views: 11.4ms | ActiveRecord: 2.3ms | Allocations: 13378)
+
+
+  [1m[36mBarber Load (0.3ms)[0m  [1m[34mSELECT "barbers".* FROM "barbers"[0m
+Started GET "/" for 127.0.0.1 at 2022-07-29 15:34:12 +1000
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/tim96/.rbenv/versions/3.0.3/lib/ruby/gems/3.0.0/gems/railties-7.0.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/tim96/.rbenv/versions/3.0.3/lib/ruby/gems/3.0.0/gems/railties-7.0.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 3.8ms | Allocations: 724)
+Completed 200 OK in 35ms (Views: 13.2ms | ActiveRecord: 0.0ms | Allocations: 6193)
+
+
+Started GET "/barbers" for 127.0.0.1 at 2022-07-29 15:34:18 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/barbers"):
+  
+Started GET "/favicon.ico" for 127.0.0.1 at 2022-07-29 15:34:18 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/stores" for 127.0.0.1 at 2022-07-29 15:34:26 +1000
+Processing by StoresController#index as HTML
+  [1m[36mStore Load (0.4ms)[0m  [1m[34mSELECT "stores".* FROM "stores"[0m
+  ↳ app/controllers/stores_controller.rb:8:in `index'
+Completed 200 OK in 43ms (Views: 7.0ms | ActiveRecord: 2.4ms | Allocations: 10968)
+
+
+Started GET "/barbers" for 127.0.0.1 at 2022-07-29 15:34:50 +1000
+Processing by BarbersController#index as HTML
+  [1m[36mBarber Load (0.4ms)[0m  [1m[34mSELECT "barbers".* FROM "barbers"[0m
+  ↳ app/controllers/barbers_controller.rb:8:in `index'
+Completed 200 OK in 22ms (Views: 3.7ms | ActiveRecord: 2.0ms | Allocations: 7172)
+
+
+Started GET "/availabilities" for ::1 at 2022-07-29 15:36:12 +1000
+Processing by AvailabilitiesController#index as HTML
+  [1m[36mAvailability Load (0.5ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/controllers/availabilities_controller.rb:8:in `index'
+Completed 200 OK in 43ms (Views: 4.5ms | ActiveRecord: 2.3ms | Allocations: 6988)
+
+
