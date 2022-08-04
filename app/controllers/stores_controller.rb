@@ -6,11 +6,12 @@ class StoresController < ApplicationController
     @stores = Store.all
 
     render json: @stores
+   
   end
 
   # GET /stores/1
   def show
-    render json: @store
+    render json: @store.user.username
   end
 
   # POST /stores

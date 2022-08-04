@@ -46,6 +46,6 @@ class AvailabilitiesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def availability_params
-      params.require(:availability).permit(:available_at, :barber_id)
+      params.require(:availability).permit(:barber_id,:start,:end)
     end
 end

@@ -20150,3 +20150,1188 @@ Processing by BookingsController#show as */*
 Completed 200 OK in 244ms (Views: 0.4ms | ActiveRecord: 15.0ms | Allocations: 62493)
 
 
+Started GET "/stores" for 127.0.0.1 at 2022-08-03 02:31:25 +1000
+  
+ActiveRecord::ConnectionNotEstablished (connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: No such file or directory
+	Is the server running locally and accepting connections on that socket?
+):
+  
+activerecord (7.0.3) lib/active_record/connection_adapters/postgresql_adapter.rb:87:in `rescue in new_client'
+activerecord (7.0.3) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (7.0.3) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (7.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `public_send'
+activerecord (7.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `new_connection'
+activerecord (7.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:700:in `checkout_new_connection'
+activerecord (7.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:679:in `try_to_checkout_new_connection'
+activerecord (7.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:640:in `acquire_connection'
+activerecord (7.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:341:in `checkout'
+activerecord (7.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:181:in `connection'
+activerecord (7.0.3) lib/active_record/connection_adapters/abstract/connection_handler.rb:211:in `retrieve_connection'
+activerecord (7.0.3) lib/active_record/connection_handling.rb:313:in `retrieve_connection'
+activerecord (7.0.3) lib/active_record/connection_handling.rb:280:in `connection'
+activerecord (7.0.3) lib/active_record/migration.rb:613:in `connection'
+activerecord (7.0.3) lib/active_record/migration.rb:608:in `build_watcher'
+activerecord (7.0.3) lib/active_record/migration.rb:590:in `block in call'
+activerecord (7.0.3) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.3) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.3) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.3) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.3) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.3) lib/active_support/tagged_logging.rb:114:in `block in tagged'
+activesupport (7.0.3) lib/active_support/tagged_logging.rb:38:in `tagged'
+activesupport (7.0.3) lib/active_support/tagged_logging.rb:114:in `tagged'
+railties (7.0.3) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (7.0.3) lib/rails/engine.rb:530:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/stores" for 127.0.0.1 at 2022-08-03 02:32:07 +1000
+  
+ActiveRecord::ConnectionNotEstablished (connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: No such file or directory
+	Is the server running locally and accepting connections on that socket?
+):
+  
+activerecord (7.0.3) lib/active_record/connection_adapters/postgresql_adapter.rb:87:in `rescue in new_client'
+activerecord (7.0.3) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (7.0.3) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (7.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `public_send'
+activerecord (7.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `new_connection'
+activerecord (7.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:700:in `checkout_new_connection'
+activerecord (7.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:679:in `try_to_checkout_new_connection'
+activerecord (7.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:640:in `acquire_connection'
+activerecord (7.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:341:in `checkout'
+activerecord (7.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:181:in `connection'
+activerecord (7.0.3) lib/active_record/connection_adapters/abstract/connection_handler.rb:211:in `retrieve_connection'
+activerecord (7.0.3) lib/active_record/connection_handling.rb:313:in `retrieve_connection'
+activerecord (7.0.3) lib/active_record/connection_handling.rb:280:in `connection'
+activerecord (7.0.3) lib/active_record/migration.rb:613:in `connection'
+activerecord (7.0.3) lib/active_record/migration.rb:608:in `build_watcher'
+activerecord (7.0.3) lib/active_record/migration.rb:590:in `block in call'
+activerecord (7.0.3) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.3) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.3) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.3) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.3) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.3) lib/active_support/tagged_logging.rb:114:in `block in tagged'
+activesupport (7.0.3) lib/active_support/tagged_logging.rb:38:in `tagged'
+activesupport (7.0.3) lib/active_support/tagged_logging.rb:114:in `tagged'
+railties (7.0.3) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (7.0.3) lib/rails/engine.rb:530:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-03 02:32:36 +1000
+  
+ActiveRecord::ConnectionNotEstablished (connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: No such file or directory
+	Is the server running locally and accepting connections on that socket?
+):
+  
+activerecord (7.0.3) lib/active_record/connection_adapters/postgresql_adapter.rb:87:in `rescue in new_client'
+activerecord (7.0.3) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (7.0.3) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (7.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `public_send'
+activerecord (7.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `new_connection'
+activerecord (7.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:700:in `checkout_new_connection'
+activerecord (7.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:679:in `try_to_checkout_new_connection'
+activerecord (7.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:640:in `acquire_connection'
+activerecord (7.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:341:in `checkout'
+activerecord (7.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:181:in `connection'
+activerecord (7.0.3) lib/active_record/connection_adapters/abstract/connection_handler.rb:211:in `retrieve_connection'
+activerecord (7.0.3) lib/active_record/connection_handling.rb:313:in `retrieve_connection'
+activerecord (7.0.3) lib/active_record/connection_handling.rb:280:in `connection'
+activerecord (7.0.3) lib/active_record/migration.rb:613:in `connection'
+activerecord (7.0.3) lib/active_record/migration.rb:608:in `build_watcher'
+activerecord (7.0.3) lib/active_record/migration.rb:590:in `block in call'
+activerecord (7.0.3) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.3) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.3) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.3) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.3) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.3) lib/active_support/tagged_logging.rb:114:in `block in tagged'
+activesupport (7.0.3) lib/active_support/tagged_logging.rb:38:in `tagged'
+activesupport (7.0.3) lib/active_support/tagged_logging.rb:114:in `tagged'
+railties (7.0.3) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (7.0.3) lib/rails/engine.rb:530:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/store/1" for 127.0.0.1 at 2022-08-03 02:32:44 +1000
+  
+ActiveRecord::ConnectionNotEstablished (connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: No such file or directory
+	Is the server running locally and accepting connections on that socket?
+):
+  
+activerecord (7.0.3) lib/active_record/connection_adapters/postgresql_adapter.rb:87:in `rescue in new_client'
+activerecord (7.0.3) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (7.0.3) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (7.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `public_send'
+activerecord (7.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `new_connection'
+activerecord (7.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:700:in `checkout_new_connection'
+activerecord (7.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:679:in `try_to_checkout_new_connection'
+activerecord (7.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:640:in `acquire_connection'
+activerecord (7.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:341:in `checkout'
+activerecord (7.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:181:in `connection'
+activerecord (7.0.3) lib/active_record/connection_adapters/abstract/connection_handler.rb:211:in `retrieve_connection'
+activerecord (7.0.3) lib/active_record/connection_handling.rb:313:in `retrieve_connection'
+activerecord (7.0.3) lib/active_record/connection_handling.rb:280:in `connection'
+activerecord (7.0.3) lib/active_record/migration.rb:613:in `connection'
+activerecord (7.0.3) lib/active_record/migration.rb:608:in `build_watcher'
+activerecord (7.0.3) lib/active_record/migration.rb:590:in `block in call'
+activerecord (7.0.3) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.3) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.3) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.3) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.3) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.3) lib/active_support/tagged_logging.rb:114:in `block in tagged'
+activesupport (7.0.3) lib/active_support/tagged_logging.rb:38:in `tagged'
+activesupport (7.0.3) lib/active_support/tagged_logging.rb:114:in `tagged'
+railties (7.0.3) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (7.0.3) lib/rails/engine.rb:530:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-03 02:32:51 +1000
+  
+ActiveRecord::ConnectionNotEstablished (connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: No such file or directory
+	Is the server running locally and accepting connections on that socket?
+):
+  
+activerecord (7.0.3) lib/active_record/connection_adapters/postgresql_adapter.rb:87:in `rescue in new_client'
+activerecord (7.0.3) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (7.0.3) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (7.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `public_send'
+activerecord (7.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `new_connection'
+activerecord (7.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:700:in `checkout_new_connection'
+activerecord (7.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:679:in `try_to_checkout_new_connection'
+activerecord (7.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:640:in `acquire_connection'
+activerecord (7.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:341:in `checkout'
+activerecord (7.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:181:in `connection'
+activerecord (7.0.3) lib/active_record/connection_adapters/abstract/connection_handler.rb:211:in `retrieve_connection'
+activerecord (7.0.3) lib/active_record/connection_handling.rb:313:in `retrieve_connection'
+activerecord (7.0.3) lib/active_record/connection_handling.rb:280:in `connection'
+activerecord (7.0.3) lib/active_record/migration.rb:613:in `connection'
+activerecord (7.0.3) lib/active_record/migration.rb:608:in `build_watcher'
+activerecord (7.0.3) lib/active_record/migration.rb:590:in `block in call'
+activerecord (7.0.3) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.3) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.3) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.3) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.3) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.3) lib/active_support/tagged_logging.rb:114:in `block in tagged'
+activesupport (7.0.3) lib/active_support/tagged_logging.rb:38:in `tagged'
+activesupport (7.0.3) lib/active_support/tagged_logging.rb:114:in `tagged'
+railties (7.0.3) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (7.0.3) lib/rails/engine.rb:530:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/stores" for 127.0.0.1 at 2022-08-03 02:33:27 +1000
+  
+ActiveRecord::ConnectionNotEstablished (connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: No such file or directory
+	Is the server running locally and accepting connections on that socket?
+):
+  
+activerecord (7.0.3) lib/active_record/connection_adapters/postgresql_adapter.rb:87:in `rescue in new_client'
+activerecord (7.0.3) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (7.0.3) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (7.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `public_send'
+activerecord (7.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `new_connection'
+activerecord (7.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:700:in `checkout_new_connection'
+activerecord (7.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:679:in `try_to_checkout_new_connection'
+activerecord (7.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:640:in `acquire_connection'
+activerecord (7.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:341:in `checkout'
+activerecord (7.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:181:in `connection'
+activerecord (7.0.3) lib/active_record/connection_adapters/abstract/connection_handler.rb:211:in `retrieve_connection'
+activerecord (7.0.3) lib/active_record/connection_handling.rb:313:in `retrieve_connection'
+activerecord (7.0.3) lib/active_record/connection_handling.rb:280:in `connection'
+activerecord (7.0.3) lib/active_record/migration.rb:613:in `connection'
+activerecord (7.0.3) lib/active_record/migration.rb:608:in `build_watcher'
+activerecord (7.0.3) lib/active_record/migration.rb:590:in `block in call'
+activerecord (7.0.3) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.3) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.3) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.3) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.3) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.3) lib/active_support/tagged_logging.rb:114:in `block in tagged'
+activesupport (7.0.3) lib/active_support/tagged_logging.rb:38:in `tagged'
+activesupport (7.0.3) lib/active_support/tagged_logging.rb:114:in `tagged'
+railties (7.0.3) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (7.0.3) lib/rails/engine.rb:530:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/stores" for 127.0.0.1 at 2022-08-03 02:34:22 +1000
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/stores"):
+  
+Started GET "/bookings" for 127.0.0.1 at 2022-08-03 02:34:34 +1000
+Processing by BookingsController#index as */*
+  [1m[36mBooking Load (3.3ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings"[0m
+  ↳ app/controllers/bookings_controller.rb:8:in `index'
+Completed 200 OK in 114ms (Views: 13.0ms | ActiveRecord: 6.3ms | Allocations: 26192)
+
+
+Started GET "/barbers" for 127.0.0.1 at 2022-08-03 02:35:03 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/barbers"):
+  
+Started GET "/barber" for 127.0.0.1 at 2022-08-03 02:35:07 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/barber"):
+  
+Started GET "/stores" for 127.0.0.1 at 2022-08-03 02:35:33 +1000
+Processing by StoresController#index as */*
+  [1m[36mStore Load (1.7ms)[0m  [1m[34mSELECT "stores".* FROM "stores"[0m
+  ↳ app/controllers/stores_controller.rb:8:in `index'
+Completed 200 OK in 51ms (Views: 5.3ms | ActiveRecord: 4.0ms | Allocations: 8431)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-03 02:35:47 +1000
+Processing by StoresController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:45:in `set_store'
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:14:in `show'
+Completed 200 OK in 120ms (Views: 0.2ms | ActiveRecord: 5.2ms | Allocations: 16368)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-03 02:36:07 +1000
+Processing by StoresController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.3ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:45:in `set_store'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:14:in `show'
+Completed 200 OK in 60ms (Views: 0.2ms | ActiveRecord: 6.7ms | Allocations: 10455)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-03 02:36:28 +1000
+Processing by StoresController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:45:in `set_store'
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 2.3ms | Allocations: 8146)
+
+
+  
+NoMethodError (undefined method `barber' for #<Store id: 1, name: "Ministry Barbers", location: "219 Miller Rd, Bass Hill NSW 2197", user_id: 1, created_at: "2022-07-28 08:45:03.959784000 +0000", updated_at: "2022-07-28 08:45:03.959784000 +0000">):
+  
+app/controllers/stores_controller.rb:14:in `show'
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-03 02:36:33 +1000
+Processing by StoresController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.3ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:45:in `set_store'
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.3ms | Allocations: 2587)
+
+
+  
+NoMethodError (undefined method `barber' for #<Store id: 1, name: "Ministry Barbers", location: "219 Miller Rd, Bass Hill NSW 2197", user_id: 1, created_at: "2022-07-28 08:45:03.959784000 +0000", updated_at: "2022-07-28 08:45:03.959784000 +0000">):
+  
+app/controllers/stores_controller.rb:14:in `show'
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-03 02:37:23 +1000
+Processing by StoresController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:45:in `set_store'
+Completed 500 Internal Server Error in 42ms (ActiveRecord: 2.3ms | Allocations: 8963)
+
+
+  
+NoMethodError (undefined method `barber' for #<Store id: 1, name: "Ministry Barbers", location: "219 Miller Rd, Bass Hill NSW 2197", user_id: 1, created_at: "2022-07-28 08:45:03.959784000 +0000", updated_at: "2022-07-28 08:45:03.959784000 +0000">
+Did you mean?  barbers
+               barbers=):
+  
+app/controllers/stores_controller.rb:14:in `show'
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-03 02:37:35 +1000
+Processing by StoresController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:45:in `set_store'
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 1.6ms | Allocations: 8928)
+
+
+  
+NoMethodError (undefined method `barber' for #<Store id: 1, name: "Ministry Barbers", location: "219 Miller Rd, Bass Hill NSW 2197", user_id: 1, created_at: "2022-07-28 08:45:03.959784000 +0000", updated_at: "2022-07-28 08:45:03.959784000 +0000">
+Did you mean?  barbers
+               barbers=):
+  
+app/controllers/stores_controller.rb:14:in `show'
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-03 02:38:25 +1000
+Processing by StoresController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:45:in `set_store'
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 2.1ms | Allocations: 9001)
+
+
+  
+NoMethodError (undefined method `booking' for #<Store id: 1, name: "Ministry Barbers", location: "219 Miller Rd, Bass Hill NSW 2197", user_id: 1, created_at: "2022-07-28 08:45:03.959784000 +0000", updated_at: "2022-07-28 08:45:03.959784000 +0000">
+Did you mean?  bookings
+               bookings=):
+  
+app/controllers/stores_controller.rb:14:in `show'
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-03 02:38:43 +1000
+Processing by StoresController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:45:in `set_store'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:14:in `show'
+Completed 500 Internal Server Error in 47ms (ActiveRecord: 3.6ms | Allocations: 13400)
+
+
+  
+NoMethodError (undefined method `name' for #<User id: 1, username: "tim", email: "s90six@gmail.com", password_digest: [FILTERED], created_at: "2022-07-28 08:45:03.889743000 +0000", updated_at: "2022-07-28 08:45:03.889743000 +0000", admin: true>):
+  
+app/controllers/stores_controller.rb:14:in `show'
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-03 02:38:53 +1000
+Processing by StoresController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:45:in `set_store'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:14:in `show'
+Completed 200 OK in 53ms (Views: 0.3ms | ActiveRecord: 4.7ms | Allocations: 11271)
+
+
+Started GET "/ws" for ::1 at 2022-08-03 15:38:41 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for ::1 at 2022-08-03 15:38:44 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for ::1 at 2022-08-03 15:38:49 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for ::1 at 2022-08-03 15:38:58 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for ::1 at 2022-08-03 15:39:15 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for ::1 at 2022-08-03 15:39:48 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for ::1 at 2022-08-03 15:40:53 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for ::1 at 2022-08-03 15:43:02 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/Blog" for ::1 at 2022-08-03 15:47:11 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/Blog"):
+  
+Started GET "/favicon.ico" for ::1 at 2022-08-03 15:47:12 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/ws" for ::1 at 2022-08-03 15:47:15 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/manifest.json" for ::1 at 2022-08-03 15:47:15 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/manifest.json"):
+  
+Started GET "/ws" for ::1 at 2022-08-03 15:47:16 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/Pricing" for ::1 at 2022-08-03 15:47:16 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/Pricing"):
+  
+Started GET "/ws" for ::1 at 2022-08-03 15:47:21 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/manifest.json" for ::1 at 2022-08-03 15:47:21 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/manifest.json"):
+  
+Started GET "/ws" for ::1 at 2022-08-03 15:47:22 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for ::1 at 2022-08-03 15:47:25 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for ::1 at 2022-08-03 15:47:29 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1352528056989791325)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddStartToAvailability (20220804154711)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (11.4ms)[0m  [1m[35mALTER TABLE "availabilities" ADD "start" timestamp(6)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220804154711"]]
+  [1m[36mTRANSACTION (5.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.7ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(1352528056989791325)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1352528056989791325)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddEndToAvailability (20220804154755)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.2ms)[0m  [1m[35mALTER TABLE "availabilities" ADD "end" timestamp(6)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220804154755"]]
+  [1m[36mTRANSACTION (4.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(1352528056989791325)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1352528056989791325)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to RemoveAvailableAtFromAvailability (20220804155144)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (4.4ms)[0m  [1m[35mALTER TABLE "availabilities" DROP COLUMN "availabale_at"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(1352528056989791325)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1352528056989791325)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to RemoveAvailableAtFromAvailability (20220804155144)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "availabilities" DROP COLUMN "availabale_at"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(1352528056989791325)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1352528056989791325)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to RemoveAvailableAtFromAvailabilities (20220804155359)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (6.3ms)[0m  [1m[35mALTER TABLE "availabilities" DROP COLUMN "available_at"[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220804155359"]]
+  [1m[36mTRANSACTION (3.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(1352528056989791325)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/availabilities" for 127.0.0.1 at 2022-08-05 01:58:02 +1000
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Error occurred while parsing request parameters.
+Contents:
+
+{
+	
+	
+	"barber_id":1,
+
+
+	
+
+}
+
+Processing by AvailabilitiesController#create as */*
+Completed 400 Bad Request in 39ms (ActiveRecord: 0.0ms | Allocations: 15266)
+
+
+  
+ActionDispatch::Http::Parameters::ParseError (Error occurred while parsing request parameters):
+  
+app/controllers/availabilities_controller.rb:49:in `availability_params'
+app/controllers/availabilities_controller.rb:18:in `create'
+Started POST "/availabilities" for 127.0.0.1 at 2022-08-05 01:58:10 +1000
+Processing by AvailabilitiesController#create as */*
+  Parameters: {"barber_id"=>1, "availability"=>{"barber_id"=>1}}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/availabilities_controller.rb:20:in `create'
+  [1m[36mBarber Load (3.0ms)[0m  [1m[34mSELECT "barbers".* FROM "barbers" WHERE "barbers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/availabilities_controller.rb:20:in `create'
+  [1m[36mAvailability Create (6.1ms)[0m  [1m[32mINSERT INTO "availabilities" ("barber_id", "created_at", "updated_at", "start", "end") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["barber_id", 1], ["created_at", "2022-08-04 15:58:10.704550"], ["updated_at", "2022-08-04 15:58:10.704550"], ["start", nil], ["end", nil]]
+  ↳ app/controllers/availabilities_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (3.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/availabilities_controller.rb:20:in `create'
+Completed 201 Created in 109ms (Views: 0.9ms | ActiveRecord: 17.0ms | Allocations: 19438)
+
+
+Started POST "/availabilities" for 127.0.0.1 at 2022-08-05 01:59:31 +1000
+Processing by AvailabilitiesController#create as */*
+  Parameters: {"barber_id"=>1, "start"=>"2022-08-04:16:10", "end"=>"2022-08-04:17:10", "availability"=>{"barber_id"=>1, "start"=>"2022-08-04:16:10", "end"=>"2022-08-04:17:10"}}
+[31mUnpermitted parameters: :start, :end. Context: { controller: AvailabilitiesController, action: create, request: #<ActionDispatch::Request:0x00007f476c01ff80>, params: {"barber_id"=>1, "start"=>"2022-08-04:16:10", "end"=>"2022-08-04:17:10", "controller"=>"availabilities", "action"=>"create", "availability"=>{"barber_id"=>1, "start"=>"2022-08-04:16:10", "end"=>"2022-08-04:17:10"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/availabilities_controller.rb:20:in `create'
+  [1m[36mBarber Load (0.4ms)[0m  [1m[34mSELECT "barbers".* FROM "barbers" WHERE "barbers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/availabilities_controller.rb:20:in `create'
+  [1m[36mAvailability Create (0.3ms)[0m  [1m[32mINSERT INTO "availabilities" ("barber_id", "created_at", "updated_at", "start", "end") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["barber_id", 1], ["created_at", "2022-08-04 15:59:31.161358"], ["updated_at", "2022-08-04 15:59:31.161358"], ["start", nil], ["end", nil]]
+  ↳ app/controllers/availabilities_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (3.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/availabilities_controller.rb:20:in `create'
+Completed 201 Created in 11ms (Views: 0.5ms | ActiveRecord: 4.1ms | Allocations: 3213)
+
+
+Started POST "/availabilities" for 127.0.0.1 at 2022-08-05 01:59:40 +1000
+Error occurred while parsing request parameters.
+Contents:
+
+{
+	
+	
+	"barber_id":1,
+    "start":2022-08-04:16:10,
+    "end":2022-08-04:17:10
+
+
+
+	
+
+}
+
+Processing by AvailabilitiesController#create as */*
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms | Allocations: 121)
+
+
+  
+ActionDispatch::Http::Parameters::ParseError (Error occurred while parsing request parameters):
+  
+app/controllers/availabilities_controller.rb:49:in `availability_params'
+app/controllers/availabilities_controller.rb:18:in `create'
+Started POST "/availabilities" for 127.0.0.1 at 2022-08-05 01:59:51 +1000
+Processing by AvailabilitiesController#create as */*
+  Parameters: {"barber_id"=>1, "start"=>"2022-08-04:16:10", "end"=>"2022-08-04:17:10", "availability"=>{"barber_id"=>1, "start"=>"2022-08-04:16:10", "end"=>"2022-08-04:17:10"}}
+[31mUnpermitted parameters: :start, :end. Context: { controller: AvailabilitiesController, action: create, request: #<ActionDispatch::Request:0x00007f4770dbf178>, params: {"barber_id"=>1, "start"=>"2022-08-04:16:10", "end"=>"2022-08-04:17:10", "controller"=>"availabilities", "action"=>"create", "availability"=>{"barber_id"=>1, "start"=>"2022-08-04:16:10", "end"=>"2022-08-04:17:10"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/availabilities_controller.rb:20:in `create'
+  [1m[36mBarber Load (0.2ms)[0m  [1m[34mSELECT "barbers".* FROM "barbers" WHERE "barbers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/availabilities_controller.rb:20:in `create'
+  [1m[36mAvailability Create (0.4ms)[0m  [1m[32mINSERT INTO "availabilities" ("barber_id", "created_at", "updated_at", "start", "end") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["barber_id", 1], ["created_at", "2022-08-04 15:59:51.514958"], ["updated_at", "2022-08-04 15:59:51.514958"], ["start", nil], ["end", nil]]
+  ↳ app/controllers/availabilities_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (3.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/availabilities_controller.rb:20:in `create'
+Completed 201 Created in 12ms (Views: 0.5ms | ActiveRecord: 4.2ms | Allocations: 3139)
+
+
+Started POST "/availabilities" for 127.0.0.1 at 2022-08-05 02:00:09 +1000
+Processing by AvailabilitiesController#create as */*
+  Parameters: {"barber_id"=>1, "start"=>"2022-08-04T15:59:51.514Z", "end"=>"2022-08-04T15:59:51.514Z", "availability"=>{"barber_id"=>1, "start"=>"2022-08-04T15:59:51.514Z", "end"=>"2022-08-04T15:59:51.514Z"}}
+[31mUnpermitted parameters: :start, :end. Context: { controller: AvailabilitiesController, action: create, request: #<ActionDispatch::Request:0x00007f4774203740>, params: {"barber_id"=>1, "start"=>"2022-08-04T15:59:51.514Z", "end"=>"2022-08-04T15:59:51.514Z", "controller"=>"availabilities", "action"=>"create", "availability"=>{"barber_id"=>1, "start"=>"2022-08-04T15:59:51.514Z", "end"=>"2022-08-04T15:59:51.514Z"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/availabilities_controller.rb:20:in `create'
+  [1m[36mBarber Load (0.4ms)[0m  [1m[34mSELECT "barbers".* FROM "barbers" WHERE "barbers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/availabilities_controller.rb:20:in `create'
+  [1m[36mAvailability Create (0.3ms)[0m  [1m[32mINSERT INTO "availabilities" ("barber_id", "created_at", "updated_at", "start", "end") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["barber_id", 1], ["created_at", "2022-08-04 16:00:09.373661"], ["updated_at", "2022-08-04 16:00:09.373661"], ["start", nil], ["end", nil]]
+  ↳ app/controllers/availabilities_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (3.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/availabilities_controller.rb:20:in `create'
+Completed 201 Created in 11ms (Views: 0.4ms | ActiveRecord: 4.5ms | Allocations: 3133)
+
+
+Started GET "/availabilities" for 127.0.0.1 at 2022-08-05 02:00:16 +1000
+Processing by AvailabilitiesController#index as */*
+  Parameters: {"barber_id"=>1, "start"=>"2022-08-04T15:59:51.514Z", "end"=>"2022-08-04T15:59:51.514Z", "availability"=>{"barber_id"=>1, "start"=>"2022-08-04T15:59:51.514Z", "end"=>"2022-08-04T15:59:51.514Z"}}
+  [1m[36mAvailability Load (0.4ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/controllers/availabilities_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.4ms | Allocations: 1526)
+
+
+Started GET "/availabilities" for 127.0.0.1 at 2022-08-05 02:14:31 +1000
+Processing by AvailabilitiesController#index as */*
+  Parameters: {"barber_id"=>1, "start"=>"2022-08-04 20:38:00 UTC", "end"=>"2022-08-04 20:38:00 UTC", "availability"=>{"barber_id"=>1, "start"=>"2022-08-04 20:38:00 UTC", "end"=>"2022-08-04 20:38:00 UTC"}}
+  [1m[36mAvailability Load (0.4ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/controllers/availabilities_controller.rb:8:in `index'
+Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 4.1ms | Allocations: 3574)
+
+
+Started GET "/availabilities" for 127.0.0.1 at 2022-08-05 02:14:35 +1000
+Processing by AvailabilitiesController#index as */*
+  Parameters: {"barber_id"=>1, "start"=>"2022-08-04 20:38:00 UTC", "end"=>"2022-08-04 20:38:00 UTC", "availability"=>{"barber_id"=>1, "start"=>"2022-08-04 20:38:00 UTC", "end"=>"2022-08-04 20:38:00 UTC"}}
+  [1m[36mAvailability Load (0.3ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/controllers/availabilities_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.3ms | Allocations: 1215)
+
+
+Started POST "/availabilities" for 127.0.0.1 at 2022-08-05 02:14:45 +1000
+Processing by AvailabilitiesController#create as */*
+  Parameters: {"barber_id"=>1, "start"=>"2022-08-04 20:38:00 UTC", "end"=>"2022-08-04 20:38:00 UTC", "availability"=>{"barber_id"=>1, "start"=>"2022-08-04 20:38:00 UTC", "end"=>"2022-08-04 20:38:00 UTC"}}
+[31mUnpermitted parameters: :start, :end. Context: { controller: AvailabilitiesController, action: create, request: #<ActionDispatch::Request:0x00007f477427f250>, params: {"barber_id"=>1, "start"=>"2022-08-04 20:38:00 UTC", "end"=>"2022-08-04 20:38:00 UTC", "controller"=>"availabilities", "action"=>"create", "availability"=>{"barber_id"=>1, "start"=>"2022-08-04 20:38:00 UTC", "end"=>"2022-08-04 20:38:00 UTC"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/availabilities_controller.rb:20:in `create'
+  [1m[36mBarber Load (0.5ms)[0m  [1m[34mSELECT "barbers".* FROM "barbers" WHERE "barbers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/availabilities_controller.rb:20:in `create'
+  [1m[36mAvailability Create (0.7ms)[0m  [1m[32mINSERT INTO "availabilities" ("barber_id", "created_at", "updated_at", "start", "end") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["barber_id", 1], ["created_at", "2022-08-04 16:14:45.814168"], ["updated_at", "2022-08-04 16:14:45.814168"], ["start", nil], ["end", nil]]
+  ↳ app/controllers/availabilities_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (3.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/availabilities_controller.rb:20:in `create'
+Completed 201 Created in 14ms (Views: 0.7ms | ActiveRecord: 5.3ms | Allocations: 3338)
+
+
+Started GET "/availabilities" for 127.0.0.1 at 2022-08-05 02:18:45 +1000
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AvailabilitiesController#index as */*
+  Parameters: {"barber_id"=>1, "start"=>"2022-08-04 20:38:00 UTC", "end"=>"2022-08-04 20:38:00 UTC", "availability"=>{"barber_id"=>1, "start"=>"2022-08-04 20:38:00 UTC", "end"=>"2022-08-04 20:38:00 UTC"}}
+  [1m[36mAvailability Load (0.5ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/controllers/availabilities_controller.rb:8:in `index'
+Completed 200 OK in 36ms (Views: 9.7ms | ActiveRecord: 2.9ms | Allocations: 18930)
+
+
+Started POST "/availabilities" for 127.0.0.1 at 2022-08-05 02:42:19 +1000
+Processing by AvailabilitiesController#create as */*
+  Parameters: {"barber_id"=>1, "start"=>"2022 November 21-20:37", "end"=>"2022 November 21-20:37", "availability"=>{"barber_id"=>1, "start"=>"2022 November 21-20:37", "end"=>"2022 November 21-20:37"}}
+[31mUnpermitted parameters: :start, :end. Context: { controller: AvailabilitiesController, action: create, request: #<ActionDispatch::Request:0x00007faec0622750>, params: {"barber_id"=>1, "start"=>"2022 November 21-20:37", "end"=>"2022 November 21-20:37", "controller"=>"availabilities", "action"=>"create", "availability"=>{"barber_id"=>1, "start"=>"2022 November 21-20:37", "end"=>"2022 November 21-20:37"}} }[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/availabilities_controller.rb:20:in `create'
+  [1m[36mBarber Load (0.3ms)[0m  [1m[34mSELECT "barbers".* FROM "barbers" WHERE "barbers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/availabilities_controller.rb:20:in `create'
+  [1m[36mAvailability Create (0.8ms)[0m  [1m[32mINSERT INTO "availabilities" ("barber_id", "created_at", "updated_at", "start", "end") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["barber_id", 1], ["created_at", "2022-08-04 16:42:20.158945"], ["updated_at", "2022-08-04 16:42:20.158945"], ["start", nil], ["end", nil]]
+  ↳ app/controllers/availabilities_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (3.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/availabilities_controller.rb:20:in `create'
+Completed 201 Created in 137ms (Views: 0.6ms | ActiveRecord: 10.9ms | Allocations: 18597)
+
+
+Started POST "/availabilities" for 127.0.0.1 at 2022-08-05 02:44:44 +1000
+Error occurred while parsing request parameters.
+Contents:
+
+{
+	
+	
+	"barber_id":1,
+    "start":2022 November 21-20:37,
+    "end": 2022 November 21-20:36
+
+
+
+	
+
+}
+
+Processing by AvailabilitiesController#create as */*
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms | Allocations: 165)
+
+
+  
+ActionDispatch::Http::Parameters::ParseError (Error occurred while parsing request parameters):
+  
+app/controllers/availabilities_controller.rb:49:in `availability_params'
+app/controllers/availabilities_controller.rb:18:in `create'
+Started POST "/availabilities" for 127.0.0.1 at 2022-08-05 02:45:39 +1000
+Error occurred while parsing request parameters.
+Contents:
+
+{
+	
+	
+	"barber_id":1,
+    "start":2022-12-21-20:37,
+    "end": 2022/12/22
+
+
+
+	
+
+}
+
+Processing by AvailabilitiesController#create as */*
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms | Allocations: 114)
+
+
+  
+ActionDispatch::Http::Parameters::ParseError (Error occurred while parsing request parameters):
+  
+app/controllers/availabilities_controller.rb:49:in `availability_params'
+app/controllers/availabilities_controller.rb:18:in `create'
+Started POST "/availabilities" for 127.0.0.1 at 2022-08-05 02:48:03 +1000
+Processing by AvailabilitiesController#create as */*
+  Parameters: {"barber_id"=>1, "start"=>"2022-12-31-20:37", "end"=>"2022-12-31-20:37", "availability"=>{"barber_id"=>1, "start"=>"2022-12-31-20:37", "end"=>"2022-12-31-20:37"}}
+[31mUnpermitted parameters: :start, :end. Context: { controller: AvailabilitiesController, action: create, request: #<ActionDispatch::Request:0x00007faeb09da128>, params: {"barber_id"=>1, "start"=>"2022-12-31-20:37", "end"=>"2022-12-31-20:37", "controller"=>"availabilities", "action"=>"create", "availability"=>{"barber_id"=>1, "start"=>"2022-12-31-20:37", "end"=>"2022-12-31-20:37"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/availabilities_controller.rb:20:in `create'
+  [1m[36mBarber Load (0.8ms)[0m  [1m[34mSELECT "barbers".* FROM "barbers" WHERE "barbers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/availabilities_controller.rb:20:in `create'
+  [1m[36mAvailability Create (0.7ms)[0m  [1m[32mINSERT INTO "availabilities" ("barber_id", "created_at", "updated_at", "start", "end") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["barber_id", 1], ["created_at", "2022-08-04 16:48:03.377030"], ["updated_at", "2022-08-04 16:48:03.377030"], ["start", nil], ["end", nil]]
+  ↳ app/controllers/availabilities_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (4.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/availabilities_controller.rb:20:in `create'
+Completed 201 Created in 23ms (Views: 0.5ms | ActiveRecord: 9.0ms | Allocations: 5527)
+
+
+Started POST "/availabilities" for 127.0.0.1 at 2022-08-05 02:48:12 +1000
+Processing by AvailabilitiesController#create as */*
+  Parameters: {"barber_id"=>1, "start"=>"2022-12-31 20:37", "end"=>"2022-12-31 20:37", "availability"=>{"barber_id"=>1, "start"=>"2022-12-31 20:37", "end"=>"2022-12-31 20:37"}}
+[31mUnpermitted parameters: :start, :end. Context: { controller: AvailabilitiesController, action: create, request: #<ActionDispatch::Request:0x00007faeb0a3fb40>, params: {"barber_id"=>1, "start"=>"2022-12-31 20:37", "end"=>"2022-12-31 20:37", "controller"=>"availabilities", "action"=>"create", "availability"=>{"barber_id"=>1, "start"=>"2022-12-31 20:37", "end"=>"2022-12-31 20:37"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/availabilities_controller.rb:20:in `create'
+  [1m[36mBarber Load (0.2ms)[0m  [1m[34mSELECT "barbers".* FROM "barbers" WHERE "barbers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/availabilities_controller.rb:20:in `create'
+  [1m[36mAvailability Create (0.4ms)[0m  [1m[32mINSERT INTO "availabilities" ("barber_id", "created_at", "updated_at", "start", "end") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["barber_id", 1], ["created_at", "2022-08-04 16:48:12.738581"], ["updated_at", "2022-08-04 16:48:12.738581"], ["start", nil], ["end", nil]]
+  ↳ app/controllers/availabilities_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (4.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/availabilities_controller.rb:20:in `create'
+Completed 201 Created in 12ms (Views: 0.4ms | ActiveRecord: 5.1ms | Allocations: 3152)
+
+
+Started POST "/availabilities" for 127.0.0.1 at 2022-08-05 02:49:24 +1000
+Processing by AvailabilitiesController#create as */*
+  Parameters: {"barber_id"=>1, "start"=>"2022-12-31 04:05", "end"=>"2022-12-31 04:05", "availability"=>{"barber_id"=>1, "start"=>"2022-12-31 04:05", "end"=>"2022-12-31 04:05"}}
+[31mUnpermitted parameters: :start, :end. Context: { controller: AvailabilitiesController, action: create, request: #<ActionDispatch::Request:0x00007faec0d634b0>, params: {"barber_id"=>1, "start"=>"2022-12-31 04:05", "end"=>"2022-12-31 04:05", "controller"=>"availabilities", "action"=>"create", "availability"=>{"barber_id"=>1, "start"=>"2022-12-31 04:05", "end"=>"2022-12-31 04:05"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/availabilities_controller.rb:20:in `create'
+  [1m[36mBarber Load (0.3ms)[0m  [1m[34mSELECT "barbers".* FROM "barbers" WHERE "barbers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/availabilities_controller.rb:20:in `create'
+  [1m[36mAvailability Create (0.3ms)[0m  [1m[32mINSERT INTO "availabilities" ("barber_id", "created_at", "updated_at", "start", "end") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["barber_id", 1], ["created_at", "2022-08-04 16:49:24.390628"], ["updated_at", "2022-08-04 16:49:24.390628"], ["start", nil], ["end", nil]]
+  ↳ app/controllers/availabilities_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (3.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/availabilities_controller.rb:20:in `create'
+Completed 201 Created in 10ms (Views: 0.4ms | ActiveRecord: 4.0ms | Allocations: 3151)
+
+
+Started POST "/availabilities" for 127.0.0.1 at 2022-08-05 02:49:35 +1000
+Error occurred while parsing request parameters.
+Contents:
+
+{
+	
+	
+	"barber_id":1,
+    "start":2022-12-31 04:05,
+    "end": 2022-12-31 04:05
+
+
+
+	
+
+}
+
+Processing by AvailabilitiesController#create as */*
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms | Allocations: 112)
+
+
+  
+ActionDispatch::Http::Parameters::ParseError (Error occurred while parsing request parameters):
+  
+app/controllers/availabilities_controller.rb:49:in `availability_params'
+app/controllers/availabilities_controller.rb:18:in `create'
+Started POST "/availabilities" for 127.0.0.1 at 2022-08-05 02:50:01 +1000
+Error occurred while parsing request parameters.
+Contents:
+
+{
+	
+	
+	"barber_id":1,
+    "start":2022123104:05,
+    "end": 202212310405
+
+
+
+	
+
+}
+
+Processing by AvailabilitiesController#create as */*
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms | Allocations: 112)
+
+
+  
+ActionDispatch::Http::Parameters::ParseError (Error occurred while parsing request parameters):
+  
+app/controllers/availabilities_controller.rb:49:in `availability_params'
+app/controllers/availabilities_controller.rb:18:in `create'
+Started POST "/availabilities" for 127.0.0.1 at 2022-08-05 02:50:06 +1000
+Processing by AvailabilitiesController#create as */*
+  Parameters: {"barber_id"=>1, "start"=>202212310405, "end"=>202212310405, "availability"=>{"barber_id"=>1, "start"=>202212310405, "end"=>202212310405}}
+[31mUnpermitted parameters: :start, :end. Context: { controller: AvailabilitiesController, action: create, request: #<ActionDispatch::Request:0x00007faec10c0720>, params: {"barber_id"=>1, "start"=>202212310405, "end"=>202212310405, "controller"=>"availabilities", "action"=>"create", "availability"=>{"barber_id"=>1, "start"=>202212310405, "end"=>202212310405}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/availabilities_controller.rb:20:in `create'
+  [1m[36mBarber Load (0.2ms)[0m  [1m[34mSELECT "barbers".* FROM "barbers" WHERE "barbers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/availabilities_controller.rb:20:in `create'
+  [1m[36mAvailability Create (0.3ms)[0m  [1m[32mINSERT INTO "availabilities" ("barber_id", "created_at", "updated_at", "start", "end") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["barber_id", 1], ["created_at", "2022-08-04 16:50:06.688422"], ["updated_at", "2022-08-04 16:50:06.688422"], ["start", nil], ["end", nil]]
+  ↳ app/controllers/availabilities_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (3.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/availabilities_controller.rb:20:in `create'
+Completed 201 Created in 10ms (Views: 0.6ms | ActiveRecord: 3.9ms | Allocations: 3139)
+
+
+Started POST "/availabilities" for 127.0.0.1 at 2022-08-05 02:50:50 +1000
+Error occurred while parsing request parameters.
+Contents:
+
+{
+	
+	
+	"barber_id":1,
+    "start":"2022-08-04T16:50:06.688Z"
+    "end": "2022-08-04T16:50:06.688Z"
+
+
+
+	
+
+}
+
+Processing by AvailabilitiesController#create as */*
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms | Allocations: 113)
+
+
+  
+ActionDispatch::Http::Parameters::ParseError (Error occurred while parsing request parameters):
+  
+app/controllers/availabilities_controller.rb:49:in `availability_params'
+app/controllers/availabilities_controller.rb:18:in `create'
+Started POST "/availabilities" for 127.0.0.1 at 2022-08-05 02:50:55 +1000
+Processing by AvailabilitiesController#create as */*
+  Parameters: {"barber_id"=>1, "start"=>"2022-08-04T16:50:06.688Z", "end"=>"2022-08-04T16:50:06.688Z", "availability"=>{"barber_id"=>1, "start"=>"2022-08-04T16:50:06.688Z", "end"=>"2022-08-04T16:50:06.688Z"}}
+[31mUnpermitted parameters: :start, :end. Context: { controller: AvailabilitiesController, action: create, request: #<ActionDispatch::Request:0x00007faeb0d20170>, params: {"barber_id"=>1, "start"=>"2022-08-04T16:50:06.688Z", "end"=>"2022-08-04T16:50:06.688Z", "controller"=>"availabilities", "action"=>"create", "availability"=>{"barber_id"=>1, "start"=>"2022-08-04T16:50:06.688Z", "end"=>"2022-08-04T16:50:06.688Z"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/availabilities_controller.rb:20:in `create'
+  [1m[36mBarber Load (0.2ms)[0m  [1m[34mSELECT "barbers".* FROM "barbers" WHERE "barbers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/availabilities_controller.rb:20:in `create'
+  [1m[36mAvailability Create (0.3ms)[0m  [1m[32mINSERT INTO "availabilities" ("barber_id", "created_at", "updated_at", "start", "end") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["barber_id", 1], ["created_at", "2022-08-04 16:50:55.486075"], ["updated_at", "2022-08-04 16:50:55.486075"], ["start", nil], ["end", nil]]
+  ↳ app/controllers/availabilities_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (3.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/availabilities_controller.rb:20:in `create'
+Completed 201 Created in 17ms (Views: 0.4ms | ActiveRecord: 4.5ms | Allocations: 3134)
+
+
+Started POST "/availabilities" for 127.0.0.1 at 2022-08-05 02:52:36 +1000
+Error occurred while parsing request parameters.
+Contents:
+
+{
+	
+	
+	"barber_id":1,
+    "start":2001,2,3,4,5,6,
+    "end": "2001,2,3,4,5,6"
+
+
+
+	
+
+}
+
+Processing by AvailabilitiesController#create as */*
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms | Allocations: 112)
+
+
+  
+ActionDispatch::Http::Parameters::ParseError (Error occurred while parsing request parameters):
+  
+app/controllers/availabilities_controller.rb:49:in `availability_params'
+app/controllers/availabilities_controller.rb:18:in `create'
+Started POST "/availabilities" for 127.0.0.1 at 2022-08-05 02:52:51 +1000
+Processing by AvailabilitiesController#create as */*
+  Parameters: {"barber_id"=>1, "start"=>"2001,2,3,4,5,6", "end"=>"2001,2,3,4,5,6", "availability"=>{"barber_id"=>1, "start"=>"2001,2,3,4,5,6", "end"=>"2001,2,3,4,5,6"}}
+[31mUnpermitted parameters: :start, :end. Context: { controller: AvailabilitiesController, action: create, request: #<ActionDispatch::Request:0x00007faec06b2fd0>, params: {"barber_id"=>1, "start"=>"2001,2,3,4,5,6", "end"=>"2001,2,3,4,5,6", "controller"=>"availabilities", "action"=>"create", "availability"=>{"barber_id"=>1, "start"=>"2001,2,3,4,5,6", "end"=>"2001,2,3,4,5,6"}} }[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/availabilities_controller.rb:20:in `create'
+  [1m[36mBarber Load (0.3ms)[0m  [1m[34mSELECT "barbers".* FROM "barbers" WHERE "barbers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/availabilities_controller.rb:20:in `create'
+  [1m[36mAvailability Create (0.4ms)[0m  [1m[32mINSERT INTO "availabilities" ("barber_id", "created_at", "updated_at", "start", "end") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["barber_id", 1], ["created_at", "2022-08-04 16:52:51.761351"], ["updated_at", "2022-08-04 16:52:51.761351"], ["start", nil], ["end", nil]]
+  ↳ app/controllers/availabilities_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (2.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/availabilities_controller.rb:20:in `create'
+Completed 201 Created in 11ms (Views: 0.5ms | ActiveRecord: 3.7ms | Allocations: 3134)
+
+
+Started POST "/availabilities" for 127.0.0.1 at 2022-08-05 02:57:27 +1000
+Error occurred while parsing request parameters.
+Contents:
+
+{
+	
+	
+	"barber_id":1,
+    "start":2022-08-05 02:57:02
+
+
+    "end": 2022-08-05 02:57:02
+
+
+
+
+
+	
+
+}
+
+Processing by AvailabilitiesController#create as */*
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms | Allocations: 112)
+
+
+  
+ActionDispatch::Http::Parameters::ParseError (Error occurred while parsing request parameters):
+  
+app/controllers/availabilities_controller.rb:49:in `availability_params'
+app/controllers/availabilities_controller.rb:18:in `create'
+Started POST "/availabilities" for 127.0.0.1 at 2022-08-05 02:57:51 +1000
+Processing by AvailabilitiesController#create as */*
+  Parameters: {"barber_id"=>1, "start"=>"2022-08-05 02:57:02", "end"=>"2022-08-05 02:57:02", "availability"=>{"barber_id"=>1, "start"=>"2022-08-05 02:57:02", "end"=>"2022-08-05 02:57:02"}}
+[31mUnpermitted parameters: :start, :end. Context: { controller: AvailabilitiesController, action: create, request: #<ActionDispatch::Request:0x00007faec0991f30>, params: {"barber_id"=>1, "start"=>"2022-08-05 02:57:02", "end"=>"2022-08-05 02:57:02", "controller"=>"availabilities", "action"=>"create", "availability"=>{"barber_id"=>1, "start"=>"2022-08-05 02:57:02", "end"=>"2022-08-05 02:57:02"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/availabilities_controller.rb:20:in `create'
+  [1m[36mBarber Load (0.2ms)[0m  [1m[34mSELECT "barbers".* FROM "barbers" WHERE "barbers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/availabilities_controller.rb:20:in `create'
+  [1m[36mAvailability Create (1.4ms)[0m  [1m[32mINSERT INTO "availabilities" ("barber_id", "created_at", "updated_at", "start", "end") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["barber_id", 1], ["created_at", "2022-08-04 16:57:51.433663"], ["updated_at", "2022-08-04 16:57:51.433663"], ["start", nil], ["end", nil]]
+  ↳ app/controllers/availabilities_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (3.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/availabilities_controller.rb:20:in `create'
+Completed 201 Created in 11ms (Views: 0.5ms | ActiveRecord: 5.0ms | Allocations: 3133)
+
+
+Started POST "/availabilities" for 127.0.0.1 at 2022-08-05 02:58:16 +1000
+Processing by AvailabilitiesController#create as */*
+  Parameters: {"barber_id"=>1, "start"=>20220805025702, "end"=>20220805025702, "availability"=>{"barber_id"=>1, "start"=>20220805025702, "end"=>20220805025702}}
+[31mUnpermitted parameters: :start, :end. Context: { controller: AvailabilitiesController, action: create, request: #<ActionDispatch::Request:0x00007faeb06357c0>, params: {"barber_id"=>1, "start"=>20220805025702, "end"=>20220805025702, "controller"=>"availabilities", "action"=>"create", "availability"=>{"barber_id"=>1, "start"=>20220805025702, "end"=>20220805025702}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/availabilities_controller.rb:20:in `create'
+  [1m[36mBarber Load (0.2ms)[0m  [1m[34mSELECT "barbers".* FROM "barbers" WHERE "barbers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/availabilities_controller.rb:20:in `create'
+  [1m[36mAvailability Create (0.3ms)[0m  [1m[32mINSERT INTO "availabilities" ("barber_id", "created_at", "updated_at", "start", "end") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["barber_id", 1], ["created_at", "2022-08-04 16:58:16.742368"], ["updated_at", "2022-08-04 16:58:16.742368"], ["start", nil], ["end", nil]]
+  ↳ app/controllers/availabilities_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (3.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/availabilities_controller.rb:20:in `create'
+Completed 201 Created in 10ms (Views: 0.4ms | ActiveRecord: 3.8ms | Allocations: 3133)
+
+
+Started POST "/availabilities" for 127.0.0.1 at 2022-08-05 02:58:41 +1000
+Processing by AvailabilitiesController#create as */*
+  Parameters: {"barber_id"=>1, "start"=>"20220805025702", "end"=>"20220805025702", "availability"=>{"barber_id"=>1, "start"=>"20220805025702", "end"=>"20220805025702"}}
+[31mUnpermitted parameters: :start, :end. Context: { controller: AvailabilitiesController, action: create, request: #<ActionDispatch::Request:0x00007faeb09548e8>, params: {"barber_id"=>1, "start"=>"20220805025702", "end"=>"20220805025702", "controller"=>"availabilities", "action"=>"create", "availability"=>{"barber_id"=>1, "start"=>"20220805025702", "end"=>"20220805025702"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/availabilities_controller.rb:20:in `create'
+  [1m[36mBarber Load (0.2ms)[0m  [1m[34mSELECT "barbers".* FROM "barbers" WHERE "barbers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/availabilities_controller.rb:20:in `create'
+  [1m[36mAvailability Create (0.4ms)[0m  [1m[32mINSERT INTO "availabilities" ("barber_id", "created_at", "updated_at", "start", "end") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["barber_id", 1], ["created_at", "2022-08-04 16:58:41.234577"], ["updated_at", "2022-08-04 16:58:41.234577"], ["start", nil], ["end", nil]]
+  ↳ app/controllers/availabilities_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (3.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/availabilities_controller.rb:20:in `create'
+Completed 201 Created in 12ms (Views: 0.5ms | ActiveRecord: 4.0ms | Allocations: 3133)
+
+
+Started POST "/availabilities" for 127.0.0.1 at 2022-08-05 02:58:54 +1000
+Processing by AvailabilitiesController#create as */*
+  Parameters: {"barber_id"=>1, "start"=>"August 05, 2022 02:57", "end"=>"August 05, 2022 02:57", "availability"=>{"barber_id"=>1, "start"=>"August 05, 2022 02:57", "end"=>"August 05, 2022 02:57"}}
+[31mUnpermitted parameters: :start, :end. Context: { controller: AvailabilitiesController, action: create, request: #<ActionDispatch::Request:0x00007faec0b84e50>, params: {"barber_id"=>1, "start"=>"August 05, 2022 02:57", "end"=>"August 05, 2022 02:57", "controller"=>"availabilities", "action"=>"create", "availability"=>{"barber_id"=>1, "start"=>"August 05, 2022 02:57", "end"=>"August 05, 2022 02:57"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/availabilities_controller.rb:20:in `create'
+  [1m[36mBarber Load (0.2ms)[0m  [1m[34mSELECT "barbers".* FROM "barbers" WHERE "barbers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/availabilities_controller.rb:20:in `create'
+  [1m[36mAvailability Create (0.3ms)[0m  [1m[32mINSERT INTO "availabilities" ("barber_id", "created_at", "updated_at", "start", "end") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["barber_id", 1], ["created_at", "2022-08-04 16:58:54.438515"], ["updated_at", "2022-08-04 16:58:54.438515"], ["start", nil], ["end", nil]]
+  ↳ app/controllers/availabilities_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (3.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/availabilities_controller.rb:20:in `create'
+Completed 201 Created in 10ms (Views: 0.6ms | ActiveRecord: 4.0ms | Allocations: 3133)
+
+
+Started POST "/availabilities" for 127.0.0.1 at 2022-08-05 02:59:27 +1000
+Error occurred while parsing request parameters.
+Contents:
+
+{
+	
+	
+	"barber_id":1,
+    "start":"August 5th, 2022 02:57",
+
+",
+
+
+    "end":"August 5th, 2022 02:57",
+
+"
+
+
+
+
+
+	
+
+}
+
+Processing by AvailabilitiesController#create as */*
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms | Allocations: 114)
+
+
+  
+ActionDispatch::Http::Parameters::ParseError (Error occurred while parsing request parameters):
+  
+app/controllers/availabilities_controller.rb:49:in `availability_params'
+app/controllers/availabilities_controller.rb:18:in `create'
+Started POST "/availabilities" for 127.0.0.1 at 2022-08-05 02:59:32 +1000
+Error occurred while parsing request parameters.
+Contents:
+
+{
+	
+	
+	"barber_id":1,
+    "start":"August 5th, 2022 02:57",
+
+
+
+    "end":"August 5th, 2022 02:57",
+
+"
+
+
+
+
+
+	
+
+}
+
+Processing by AvailabilitiesController#create as */*
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms | Allocations: 116)
+
+
+  
+ActionDispatch::Http::Parameters::ParseError (Error occurred while parsing request parameters):
+  
+app/controllers/availabilities_controller.rb:49:in `availability_params'
+app/controllers/availabilities_controller.rb:18:in `create'
+Started POST "/availabilities" for 127.0.0.1 at 2022-08-05 02:59:41 +1000
+Processing by AvailabilitiesController#create as */*
+  Parameters: {"barber_id"=>1, "start"=>"August 5th, 2022 02:57", "end"=>"August 5th, 2022 02:57", "availability"=>{"barber_id"=>1, "start"=>"August 5th, 2022 02:57", "end"=>"August 5th, 2022 02:57"}}
+[31mUnpermitted parameters: :start, :end. Context: { controller: AvailabilitiesController, action: create, request: #<ActionDispatch::Request:0x00007faec0f417a0>, params: {"barber_id"=>1, "start"=>"August 5th, 2022 02:57", "end"=>"August 5th, 2022 02:57", "controller"=>"availabilities", "action"=>"create", "availability"=>{"barber_id"=>1, "start"=>"August 5th, 2022 02:57", "end"=>"August 5th, 2022 02:57"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/availabilities_controller.rb:20:in `create'
+  [1m[36mBarber Load (0.2ms)[0m  [1m[34mSELECT "barbers".* FROM "barbers" WHERE "barbers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/availabilities_controller.rb:20:in `create'
+  [1m[36mAvailability Create (0.3ms)[0m  [1m[32mINSERT INTO "availabilities" ("barber_id", "created_at", "updated_at", "start", "end") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["barber_id", 1], ["created_at", "2022-08-04 16:59:42.000855"], ["updated_at", "2022-08-04 16:59:42.000855"], ["start", nil], ["end", nil]]
+  ↳ app/controllers/availabilities_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (3.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/availabilities_controller.rb:20:in `create'
+Completed 201 Created in 11ms (Views: 0.6ms | ActiveRecord: 4.2ms | Allocations: 3133)
+
+
+Started POST "/availabilities" for 127.0.0.1 at 2022-08-05 03:00:39 +1000
+Processing by AvailabilitiesController#create as */*
+  Parameters: {"barber_id"=>1, "start"=>"August 5th, 2022 02:57", "end"=>"August 5th, 2022 02:57", "availability"=>{"barber_id"=>1, "start"=>"August 5th, 2022 02:57", "end"=>"August 5th, 2022 02:57"}}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/availabilities_controller.rb:20:in `create'
+  [1m[36mBarber Load (0.1ms)[0m  [1m[34mSELECT "barbers".* FROM "barbers" WHERE "barbers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/availabilities_controller.rb:20:in `create'
+  [1m[36mAvailability Create (0.9ms)[0m  [1m[32mINSERT INTO "availabilities" ("barber_id", "created_at", "updated_at", "start", "end") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["barber_id", 1], ["created_at", "2022-08-04 17:00:39.269991"], ["updated_at", "2022-08-04 17:00:39.269991"], ["start", "2022-08-05 02:57:00"], ["end", "2022-08-05 02:57:00"]]
+  ↳ app/controllers/availabilities_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (3.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/availabilities_controller.rb:20:in `create'
+Completed 201 Created in 32ms (Views: 0.5ms | ActiveRecord: 8.9ms | Allocations: 9970)
+
+
