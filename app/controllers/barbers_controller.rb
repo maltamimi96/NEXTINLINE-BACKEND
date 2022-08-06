@@ -46,6 +46,6 @@ class BarbersController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def barber_params
-      params.require(:barber).permit(:first_name, :last_name)
+      params.require(:barber).permit(:first_name, :last_name,:store_id)
     end
 end

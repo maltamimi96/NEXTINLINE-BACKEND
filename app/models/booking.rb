@@ -9,7 +9,7 @@ class Booking < ApplicationRecord
     return{
       store_id: self.store.name,
       barber_id: self.barber.first_name,
-      availability_id: self.availability.available_at,
+      availability_id: self.availability.start,
       client_id: self.client.last_name,
       hair_style_id: self.hair_style.name,
     }

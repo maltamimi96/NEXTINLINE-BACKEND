@@ -22,33 +22,6 @@ if Barber.count==0
     Barber.create(first_name:"John",last_name:"Doe",store_id:1)
 end
 
-if Client.count==0
-    Client.create(first_name:"Bald",last_name:"Man",phone:"12345678",email:"baldman@gmail.com",store_id:1)
-    Client.create(first_name:"Hairy",last_name:"Kid",phone:"87654321",email:"hairykid@gmail.com",store_id:1)
-end
-
-if Client.count==0
-    Client.create(first_name:"Bald",last_name:"Man",phone:"12345678",email:"baldman@gmail.com",store_id:1)
-    Client.create(first_name:"Hairy",last_name:"Kid",phone:"87654321",email:"hairykid@gmail.com",store_id:1)
-end
-
-if HairStyle.count==0
-    HairStyle.create(name:"skin fade",duration:25)
-    HairStyle.create(name:"buzz cut",duration:20)
-end
-
-
-if Availability.count==0
-    Availability.create(available_at:"1:00",barber_id:1)
-    Availability.create(available_at:"1:00",barber_id:2)
-end
-
-
-if Booking.count==0
-    Booking.create(store_id:1,barber_id:1,availability_id:1,client_id:1,hair_style_id:1)
-    Booking.create(store_id:1,barber_id:1,availability_id:2,client_id:1,hair_style_id:2)
-
-end
 
 
 

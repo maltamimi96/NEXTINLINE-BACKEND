@@ -16,6 +16,7 @@ Rails.application.routes.draw do
 resources :bookings
 resources :stores
 resources :availabilities
+resources :barbers
 
 
 scope '/auth' do

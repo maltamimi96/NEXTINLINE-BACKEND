@@ -5,7 +5,7 @@ class AvailabilitiesController < ApplicationController
   def index
     @availabilities = Availability.all
 
-    render json: @availabilities
+    render json: @availabilities.transform_availability
   end
 
   # GET /availabilities/1
@@ -37,6 +37,7 @@ class AvailabilitiesController < ApplicationController
   def destroy
     @availability.destroy
   end
+
 
   private
     # Use callbacks to share common setup or constraints between actions.
