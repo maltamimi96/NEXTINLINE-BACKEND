@@ -13,7 +13,11 @@ Rails.application.routes.draw do
 
     
 # end
-resources :questions
+resources :bookings
+resources :stores
+resources :availabilities
+resources :barbers
+
 
 scope '/auth' do
   post'/sign_up',to: 'users#create'
