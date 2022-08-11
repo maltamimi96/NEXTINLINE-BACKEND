@@ -25656,3 +25656,2754 @@ Processing by StoresController#show as HTML
 Completed 200 OK in 8ms (Views: 1.1ms | ActiveRecord: 0.6ms | Allocations: 1356)
 
 
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1352528056989791325)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(1352528056989791325)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/auth/sign_in" for 127.0.0.1 at 2022-08-12 02:05:10 +1000
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#sign_in as HTML
+  Parameters: {"email"=>"user4@gmail.com", "password"=>"[FILTERED]", "user"=>{"email"=>"user4@gmail.com"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "user4@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:16:in `sign_in'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Completed 200 OK in 244ms (Views: 5.7ms | ActiveRecord: 2.8ms | Allocations: 24651)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:05:21 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.6ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.06ms)
+Filter chain halted as :check_ownership rendered or redirected
+Completed 401 Unauthorized in 43ms (Views: 0.5ms | ActiveRecord: 2.2ms | Allocations: 10067)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:05:21 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Filter chain halted as :check_ownership rendered or redirected
+Completed 401 Unauthorized in 3ms (Views: 0.6ms | ActiveRecord: 0.4ms | Allocations: 1285)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:08:15 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.3ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.06ms)
+Filter chain halted as :check_ownership rendered or redirected
+Completed 401 Unauthorized in 4ms (Views: 0.5ms | ActiveRecord: 0.8ms | Allocations: 1284)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:08:41 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.05ms)
+Filter chain halted as :check_ownership rendered or redirected
+Completed 401 Unauthorized in 4ms (Views: 0.5ms | ActiveRecord: 0.4ms | Allocations: 1300)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:11:08 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.3ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.07ms)
+Filter chain halted as :check_ownership rendered or redirected
+Completed 401 Unauthorized in 4ms (Views: 0.5ms | ActiveRecord: 0.5ms | Allocations: 1300)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:11:55 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.13ms)
+Filter chain halted as :check_ownership rendered or redirected
+Completed 401 Unauthorized in 3ms (Views: 0.5ms | ActiveRecord: 0.4ms | Allocations: 1300)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:12:18 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.06ms)
+Filter chain halted as :check_ownership rendered or redirected
+Completed 401 Unauthorized in 4ms (Views: 0.5ms | ActiveRecord: 0.3ms | Allocations: 1284)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:12:35 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.07ms)
+Filter chain halted as :check_ownership rendered or redirected
+Completed 401 Unauthorized in 4ms (Views: 0.5ms | ActiveRecord: 0.4ms | Allocations: 1284)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:12:58 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.05ms)
+Filter chain halted as :check_ownership rendered or redirected
+Completed 401 Unauthorized in 4ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 1284)
+
+
+Started POST "/auth/sign_in" for 127.0.0.1 at 2022-08-12 02:13:26 +1000
+Processing by UsersController#sign_in as HTML
+  Parameters: {"email"=>"s90six@gmail.com", "password"=>"[FILTERED]", "user"=>{"email"=>"s90six@gmail.com"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "s90six@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:16:in `sign_in'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.12ms)
+Completed 200 OK in 167ms (Views: 0.8ms | ActiveRecord: 0.2ms | Allocations: 893)
+
+
+Started POST "/auth/sign_in" for 127.0.0.1 at 2022-08-12 02:13:30 +1000
+Processing by UsersController#sign_in as HTML
+  Parameters: {"email"=>"s90six@gmail.com", "password"=>"[FILTERED]", "user"=>{"email"=>"s90six@gmail.com"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "s90six@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:16:in `sign_in'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Completed 200 OK in 164ms (Views: 0.7ms | ActiveRecord: 0.2ms | Allocations: 826)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:13:33 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.3ms)
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 0.3ms | Allocations: 1636)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:13:34 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.19ms)
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.4ms | Allocations: 1358)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:14:39 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.3ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.27ms)
+Completed 200 OK in 5ms (Views: 1.0ms | ActiveRecord: 0.5ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:15:18 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.28ms)
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:15:22 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.18ms)
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:15:30 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.17ms)
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:15:37 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.18ms)
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:16:10 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.18ms)
+Completed 200 OK in 4ms (Views: 0.7ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:16:15 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.17ms)
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:16:20 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.23ms)
+Completed 200 OK in 4ms (Views: 0.8ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:17:24 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.21ms)
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.3ms | Allocations: 1358)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:17:39 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.17ms)
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:17:55 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.18ms)
+Completed 200 OK in 12ms (Views: 8.8ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:18:21 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.22ms)
+Completed 200 OK in 4ms (Views: 0.7ms | ActiveRecord: 0.3ms | Allocations: 1359)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:18:21 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.18ms)
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:18:35 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.17ms)
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:18:35 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.36ms)
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:18:37 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.17ms)
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:18:38 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.17ms)
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:20:23 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.23ms)
+Completed 200 OK in 4ms (Views: 0.8ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:20:23 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.17ms)
+Completed 200 OK in 4ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:20:26 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.17ms)
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:20:26 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.18ms)
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.2ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:20:29 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.18ms)
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:20:29 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.17ms)
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:22:06 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.22ms)
+Completed 200 OK in 4ms (Views: 0.8ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:22:06 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.19ms)
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:24:13 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.19ms)
+Completed 200 OK in 4ms (Views: 0.7ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:24:13 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.19ms)
+Completed 200 OK in 4ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:24:22 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.17ms)
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:24:22 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.17ms)
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:25:13 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.19ms)
+Completed 200 OK in 4ms (Views: 0.7ms | ActiveRecord: 0.3ms | Allocations: 1358)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:25:13 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.18ms)
+Completed 200 OK in 4ms (Views: 0.7ms | ActiveRecord: 0.4ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:25:17 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.18ms)
+Completed 200 OK in 5ms (Views: 0.7ms | ActiveRecord: 1.9ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:25:17 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.2ms)
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:25:21 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.17ms)
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:25:21 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.17ms)
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:25:27 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.16ms)
+Completed 200 OK in 4ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:25:27 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.17ms)
+Completed 200 OK in 4ms (Views: 0.7ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:25:50 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.18ms)
+Completed 200 OK in 4ms (Views: 0.7ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:25:50 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.17ms)
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:26:07 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.18ms)
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:26:07 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.5ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.3ms)
+Completed 200 OK in 4ms (Views: 0.7ms | ActiveRecord: 0.7ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:26:32 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.16ms)
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:26:32 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.18ms)
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:28:17 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.19ms)
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:28:17 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.19ms)
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started POST "/auth/sign_in" for 127.0.0.1 at 2022-08-12 02:32:41 +1000
+Processing by UsersController#sign_in as HTML
+  Parameters: {"email"=>"s90six@gmail.com", "password"=>"[FILTERED]", "user"=>{"email"=>"s90six@gmail.com"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "s90six@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:16:in `sign_in'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.11ms)
+Completed 200 OK in 165ms (Views: 0.9ms | ActiveRecord: 0.3ms | Allocations: 824)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:37:46 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.2ms)
+Completed 200 OK in 4ms (Views: 0.7ms | ActiveRecord: 0.4ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:37:46 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.17ms)
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:37:47 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.17ms)
+Completed 200 OK in 4ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:37:48 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.38ms)
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:37:55 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.21ms)
+Completed 200 OK in 4ms (Views: 0.6ms | ActiveRecord: 0.4ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:37:55 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.19ms)
+Completed 200 OK in 4ms (Views: 0.8ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:37:57 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.17ms)
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:37:57 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.17ms)
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:38:05 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.19ms)
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:38:05 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.17ms)
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:40:25 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.22ms)
+Completed 200 OK in 4ms (Views: 0.7ms | ActiveRecord: 0.4ms | Allocations: 1359)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:40:25 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.24ms)
+Completed 200 OK in 4ms (Views: 0.7ms | ActiveRecord: 0.4ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:40:28 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.17ms)
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:40:28 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.18ms)
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:42:57 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.2ms)
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.2ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:42:57 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.26ms)
+Completed 200 OK in 4ms (Views: 0.7ms | ActiveRecord: 0.4ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:43:16 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.2ms)
+Completed 200 OK in 4ms (Views: 0.8ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:43:16 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.18ms)
+Completed 200 OK in 4ms (Views: 0.6ms | ActiveRecord: 0.4ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:43:25 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.17ms)
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:43:25 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.22ms)
+Completed 200 OK in 4ms (Views: 0.7ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:43:34 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.17ms)
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:43:35 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.22ms)
+Completed 200 OK in 4ms (Views: 0.8ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:43:41 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.18ms)
+Completed 200 OK in 4ms (Views: 0.7ms | ActiveRecord: 0.4ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:43:41 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.2ms)
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:44:19 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.3ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.6ms)
+Completed 200 OK in 10ms (Views: 1.7ms | ActiveRecord: 0.5ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:44:19 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.2ms)
+Completed 200 OK in 4ms (Views: 0.7ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:45:06 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.19ms)
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:45:06 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.19ms)
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:45:07 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.17ms)
+Completed 200 OK in 4ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:45:07 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.17ms)
+Completed 200 OK in 4ms (Views: 0.7ms | ActiveRecord: 0.3ms | Allocations: 1358)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:45:08 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.19ms)
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:45:08 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.17ms)
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:46:21 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.3ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.27ms)
+Completed 200 OK in 6ms (Views: 1.0ms | ActiveRecord: 0.4ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:46:21 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.18ms)
+Completed 200 OK in 4ms (Views: 0.7ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:47:37 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.3ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.23ms)
+Completed 200 OK in 5ms (Views: 0.8ms | ActiveRecord: 0.4ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:47:37 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.43ms)
+Completed 200 OK in 3ms (Views: 0.9ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:47:38 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.18ms)
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:47:38 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (1.8ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.24ms)
+Completed 200 OK in 5ms (Views: 0.7ms | ActiveRecord: 1.9ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:47:39 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.2ms)
+Completed 200 OK in 4ms (Views: 0.7ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:47:39 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.18ms)
+Completed 200 OK in 4ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:47:45 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.19ms)
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:47:45 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.17ms)
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:47:47 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.19ms)
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:47:47 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.17ms)
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:47:58 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.17ms)
+Completed 200 OK in 4ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:47:58 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.17ms)
+Completed 200 OK in 4ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:47:59 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.17ms)
+Completed 200 OK in 4ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:47:59 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.2ms)
+Completed 200 OK in 4ms (Views: 0.8ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:49:11 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.3ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.24ms)
+Completed 200 OK in 4ms (Views: 0.9ms | ActiveRecord: 0.4ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:49:11 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.17ms)
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:51:22 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.3ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.35ms)
+Completed 200 OK in 5ms (Views: 1.0ms | ActiveRecord: 0.5ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:51:22 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.17ms)
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/availabilities" for 127.0.0.1 at 2022-08-12 02:51:24 +1000
+Processing by AvailabilitiesController#index as HTML
+  [1m[36mAvailability Load (6.8ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/controllers/availabilities_controller.rb:8:in `index'
+No serializer found for resource: #<Availability id: 5, barber_id: 1, created_at: "2022-08-10 09:19:57.970747000 +0000", updated_at: "2022-08-10 09:19:57.970747000 +0000", start: "2022-08-10 09:19:55.529000000 +0000", end: "2022-08-10 09:19:55.529000000 +0000", booked: false>
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Availability::ActiveRecord_Relation (0.27ms)
+Completed 200 OK in 75ms (Views: 22.3ms | ActiveRecord: 14.6ms | Allocations: 8420)
+
+
+Started GET "/availabilities" for 127.0.0.1 at 2022-08-12 02:51:24 +1000
+Processing by AvailabilitiesController#index as HTML
+  [1m[36mAvailability Load (0.3ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/controllers/availabilities_controller.rb:8:in `index'
+No serializer found for resource: #<Availability id: 5, barber_id: 1, created_at: "2022-08-10 09:19:57.970747000 +0000", updated_at: "2022-08-10 09:19:57.970747000 +0000", start: "2022-08-10 09:19:55.529000000 +0000", end: "2022-08-10 09:19:55.529000000 +0000", booked: false>
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Availability::ActiveRecord_Relation (0.12ms)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.3ms | Allocations: 1075)
+
+
+Started GET "/availabilities" for 127.0.0.1 at 2022-08-12 02:51:27 +1000
+Processing by AvailabilitiesController#index as HTML
+  [1m[36mAvailability Load (0.2ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/controllers/availabilities_controller.rb:8:in `index'
+No serializer found for resource: #<Availability id: 5, barber_id: 1, created_at: "2022-08-10 09:19:57.970747000 +0000", updated_at: "2022-08-10 09:19:57.970747000 +0000", start: "2022-08-10 09:19:55.529000000 +0000", end: "2022-08-10 09:19:55.529000000 +0000", booked: false>
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Availability::ActiveRecord_Relation (0.13ms)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.2ms | Allocations: 1028)
+
+
+Started GET "/availabilities" for 127.0.0.1 at 2022-08-12 02:51:27 +1000
+Processing by AvailabilitiesController#index as HTML
+  [1m[36mAvailability Load (0.2ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/controllers/availabilities_controller.rb:8:in `index'
+No serializer found for resource: #<Availability id: 5, barber_id: 1, created_at: "2022-08-10 09:19:57.970747000 +0000", updated_at: "2022-08-10 09:19:57.970747000 +0000", start: "2022-08-10 09:19:55.529000000 +0000", end: "2022-08-10 09:19:55.529000000 +0000", booked: false>
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Availability::ActiveRecord_Relation (0.12ms)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.2ms | Allocations: 1028)
+
+
+Started GET "/availabilities" for 127.0.0.1 at 2022-08-12 02:51:47 +1000
+Processing by AvailabilitiesController#index as HTML
+  [1m[36mAvailability Load (0.3ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/controllers/availabilities_controller.rb:8:in `index'
+No serializer found for resource: #<Availability id: 5, barber_id: 1, created_at: "2022-08-10 09:19:57.970747000 +0000", updated_at: "2022-08-10 09:19:57.970747000 +0000", start: "2022-08-10 09:19:55.529000000 +0000", end: "2022-08-10 09:19:55.529000000 +0000", booked: false>
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Availability::ActiveRecord_Relation (0.18ms)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.3ms | Allocations: 1028)
+
+
+Started GET "/availabilities" for 127.0.0.1 at 2022-08-12 02:51:47 +1000
+Processing by AvailabilitiesController#index as HTML
+  [1m[36mAvailability Load (0.2ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/controllers/availabilities_controller.rb:8:in `index'
+No serializer found for resource: #<Availability id: 5, barber_id: 1, created_at: "2022-08-10 09:19:57.970747000 +0000", updated_at: "2022-08-10 09:19:57.970747000 +0000", start: "2022-08-10 09:19:55.529000000 +0000", end: "2022-08-10 09:19:55.529000000 +0000", booked: false>
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Availability::ActiveRecord_Relation (0.15ms)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.2ms | Allocations: 1028)
+
+
+Started GET "/availabilities" for 127.0.0.1 at 2022-08-12 02:51:52 +1000
+Processing by AvailabilitiesController#index as HTML
+  [1m[36mAvailability Load (0.3ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/controllers/availabilities_controller.rb:8:in `index'
+No serializer found for resource: #<Availability id: 5, barber_id: 1, created_at: "2022-08-10 09:19:57.970747000 +0000", updated_at: "2022-08-10 09:19:57.970747000 +0000", start: "2022-08-10 09:19:55.529000000 +0000", end: "2022-08-10 09:19:55.529000000 +0000", booked: false>
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Availability::ActiveRecord_Relation (0.13ms)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.3ms | Allocations: 1028)
+
+
+Started GET "/availabilities" for 127.0.0.1 at 2022-08-12 02:51:52 +1000
+Processing by AvailabilitiesController#index as HTML
+  [1m[36mAvailability Load (0.2ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/controllers/availabilities_controller.rb:8:in `index'
+No serializer found for resource: #<Availability id: 5, barber_id: 1, created_at: "2022-08-10 09:19:57.970747000 +0000", updated_at: "2022-08-10 09:19:57.970747000 +0000", start: "2022-08-10 09:19:55.529000000 +0000", end: "2022-08-10 09:19:55.529000000 +0000", booked: false>
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Availability::ActiveRecord_Relation (0.14ms)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.2ms | Allocations: 1028)
+
+
+Started GET "/availabilities" for 127.0.0.1 at 2022-08-12 02:57:26 +1000
+Processing by AvailabilitiesController#index as HTML
+  [1m[36mAvailability Load (0.4ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/controllers/availabilities_controller.rb:8:in `index'
+No serializer found for resource: #<Availability id: 5, barber_id: 1, created_at: "2022-08-10 09:19:57.970747000 +0000", updated_at: "2022-08-10 09:19:57.970747000 +0000", start: "2022-08-10 09:19:55.529000000 +0000", end: "2022-08-10 09:19:55.529000000 +0000", booked: false>
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Availability::ActiveRecord_Relation (0.12ms)
+Completed 200 OK in 17ms (Views: 16.6ms | ActiveRecord: 7.1ms | Allocations: 3388)
+
+
+Started GET "/availabilities" for 127.0.0.1 at 2022-08-12 02:57:26 +1000
+Processing by AvailabilitiesController#index as HTML
+  [1m[36mAvailability Load (0.2ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/controllers/availabilities_controller.rb:8:in `index'
+No serializer found for resource: #<Availability id: 5, barber_id: 1, created_at: "2022-08-10 09:19:57.970747000 +0000", updated_at: "2022-08-10 09:19:57.970747000 +0000", start: "2022-08-10 09:19:55.529000000 +0000", end: "2022-08-10 09:19:55.529000000 +0000", booked: false>
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Availability::ActiveRecord_Relation (0.14ms)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.2ms | Allocations: 1028)
+
+
+Started DELETE "/availabilities/5" for 127.0.0.1 at 2022-08-12 02:57:29 +1000
+Processing by AvailabilitiesController#destroy as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAvailability Load (0.3ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities" WHERE "availabilities"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/availabilities_controller.rb:45:in `set_availability'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/availabilities_controller.rb:38:in `destroy'
+  [1m[36mAvailability Destroy (14.4ms)[0m  [1m[31mDELETE FROM "availabilities" WHERE "availabilities"."id" = $1[0m  [["id", 5]]
+  ↳ app/controllers/availabilities_controller.rb:38:in `destroy'
+  [1m[36mTRANSACTION (6.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/availabilities_controller.rb:38:in `destroy'
+Completed 204 No Content in 30ms (ActiveRecord: 22.1ms | Allocations: 2389)
+
+
+Started GET "/availabilities" for 127.0.0.1 at 2022-08-12 02:57:34 +1000
+Processing by AvailabilitiesController#index as HTML
+  [1m[36mAvailability Load (0.2ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/controllers/availabilities_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.44ms)
+Completed 200 OK in 84ms (Views: 83.6ms | ActiveRecord: 0.2ms | Allocations: 2696)
+
+
+Started GET "/availabilities" for 127.0.0.1 at 2022-08-12 02:57:34 +1000
+Processing by AvailabilitiesController#index as HTML
+  [1m[36mAvailability Load (0.2ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/controllers/availabilities_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.06ms)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.2ms | Allocations: 947)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:59:35 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.4ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.25ms)
+Completed 200 OK in 6ms (Views: 0.8ms | ActiveRecord: 0.6ms | Allocations: 1494)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 02:59:35 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.3ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.19ms)
+Completed 200 OK in 4ms (Views: 0.6ms | ActiveRecord: 0.5ms | Allocations: 1358)
+
+
+Started GET "/availabilities" for 127.0.0.1 at 2022-08-12 03:01:17 +1000
+Processing by AvailabilitiesController#index as HTML
+  [1m[36mAvailability Load (0.2ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/controllers/availabilities_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.1ms)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.2ms | Allocations: 831)
+
+
+Started GET "/availabilities" for 127.0.0.1 at 2022-08-12 03:01:17 +1000
+Processing by AvailabilitiesController#index as HTML
+  [1m[36mAvailability Load (0.2ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/controllers/availabilities_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.07ms)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.2ms | Allocations: 831)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 03:03:21 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.3ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.3ms)
+Completed 200 OK in 5ms (Views: 0.9ms | ActiveRecord: 0.5ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 03:03:21 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.18ms)
+Completed 200 OK in 4ms (Views: 0.6ms | ActiveRecord: 0.4ms | Allocations: 1358)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 03:03:27 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.23ms)
+Completed 200 OK in 4ms (Views: 0.7ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 03:03:27 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.17ms)
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.4ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 03:03:28 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.2ms)
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 03:03:28 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.23ms)
+Completed 200 OK in 4ms (Views: 0.6ms | ActiveRecord: 0.4ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 03:04:39 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.2ms)
+Completed 200 OK in 4ms (Views: 0.7ms | ActiveRecord: 0.4ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 03:04:39 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.3ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.22ms)
+Completed 200 OK in 4ms (Views: 0.7ms | ActiveRecord: 0.4ms | Allocations: 1357)
+
+
+Started GET "/availabilities" for 127.0.0.1 at 2022-08-12 03:04:58 +1000
+Processing by AvailabilitiesController#index as HTML
+  [1m[36mAvailability Load (0.3ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/controllers/availabilities_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.08ms)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.3ms | Allocations: 831)
+
+
+Started GET "/availabilities" for 127.0.0.1 at 2022-08-12 03:04:58 +1000
+Processing by AvailabilitiesController#index as HTML
+  [1m[36mAvailability Load (0.3ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/controllers/availabilities_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.06ms)
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.3ms | Allocations: 831)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 03:05:01 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.17ms)
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 03:05:01 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.18ms)
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 03:05:10 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.19ms)
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 03:05:10 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.17ms)
+Completed 200 OK in 3ms (Views: 1.0ms | ActiveRecord: 0.2ms | Allocations: 1357)
+
+
+Started GET "/availabilities" for 127.0.0.1 at 2022-08-12 03:05:26 +1000
+Processing by AvailabilitiesController#index as HTML
+  [1m[36mAvailability Load (0.3ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/controllers/availabilities_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.07ms)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.3ms | Allocations: 831)
+
+
+Started GET "/availabilities" for 127.0.0.1 at 2022-08-12 03:05:27 +1000
+Processing by AvailabilitiesController#index as HTML
+  [1m[36mAvailability Load (0.2ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/controllers/availabilities_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.05ms)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.2ms | Allocations: 831)
+
+
+Started GET "/availabilities" for 127.0.0.1 at 2022-08-12 03:05:34 +1000
+Processing by AvailabilitiesController#index as HTML
+  [1m[36mAvailability Load (0.2ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/controllers/availabilities_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.06ms)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.2ms | Allocations: 831)
+
+
+Started GET "/availabilities" for 127.0.0.1 at 2022-08-12 03:05:34 +1000
+Processing by AvailabilitiesController#index as HTML
+  [1m[36mAvailability Load (0.2ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/controllers/availabilities_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.06ms)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.2ms | Allocations: 831)
+
+
+Started GET "/availabilities" for 127.0.0.1 at 2022-08-12 03:05:36 +1000
+Processing by AvailabilitiesController#index as HTML
+  [1m[36mAvailability Load (0.2ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/controllers/availabilities_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.08ms)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.2ms | Allocations: 831)
+
+
+Started GET "/availabilities" for 127.0.0.1 at 2022-08-12 03:05:36 +1000
+Processing by AvailabilitiesController#index as HTML
+  [1m[36mAvailability Load (0.2ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/controllers/availabilities_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.05ms)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.2ms | Allocations: 831)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 03:09:22 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.31ms)
+Completed 200 OK in 4ms (Views: 0.9ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 03:09:22 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.19ms)
+Completed 200 OK in 4ms (Views: 0.7ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started POST "/auth/sign_in" for 127.0.0.1 at 2022-08-12 03:10:52 +1000
+Processing by UsersController#sign_in as HTML
+  Parameters: {"email"=>"s90six@gmail.com", "password"=>"[FILTERED]", "user"=>{"email"=>"s90six@gmail.com"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "s90six@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:16:in `sign_in'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.11ms)
+Completed 200 OK in 165ms (Views: 0.8ms | ActiveRecord: 0.3ms | Allocations: 858)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 03:10:59 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.23ms)
+Completed 200 OK in 4ms (Views: 0.8ms | ActiveRecord: 0.4ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 03:10:59 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.2ms)
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 03:11:06 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.17ms)
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 03:11:06 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.18ms)
+Completed 200 OK in 4ms (Views: 0.7ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 03:11:08 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.21ms)
+Completed 200 OK in 4ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 03:11:08 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.24ms)
+Completed 200 OK in 21ms (Views: 0.8ms | ActiveRecord: 0.5ms | Allocations: 1359)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 03:11:14 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.17ms)
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 1358)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 03:11:14 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.17ms)
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 03:11:15 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.26ms)
+Completed 200 OK in 4ms (Views: 0.9ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 03:11:15 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.17ms)
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 03:11:22 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.19ms)
+Completed 200 OK in 4ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 03:11:22 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.17ms)
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 03:11:34 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.17ms)
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 03:11:34 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.17ms)
+Completed 200 OK in 4ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 03:13:20 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.17ms)
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 03:13:20 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.17ms)
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/availabilities" for 127.0.0.1 at 2022-08-12 03:14:43 +1000
+Processing by AvailabilitiesController#index as HTML
+  [1m[36mAvailability Load (0.3ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/controllers/availabilities_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.09ms)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.3ms | Allocations: 831)
+
+
+Started GET "/availabilities" for 127.0.0.1 at 2022-08-12 03:14:43 +1000
+Processing by AvailabilitiesController#index as HTML
+  [1m[36mAvailability Load (0.2ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/controllers/availabilities_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.05ms)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.2ms | Allocations: 831)
+
+
+Started GET "/availabilities" for 127.0.0.1 at 2022-08-12 03:14:44 +1000
+Processing by AvailabilitiesController#index as HTML
+  [1m[36mAvailability Load (0.2ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/controllers/availabilities_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.07ms)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.2ms | Allocations: 831)
+
+
+Started GET "/availabilities" for 127.0.0.1 at 2022-08-12 03:14:44 +1000
+Processing by AvailabilitiesController#index as HTML
+  [1m[36mAvailability Load (0.2ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/controllers/availabilities_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.05ms)
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.2ms | Allocations: 831)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 03:16:50 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.2ms)
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 03:16:50 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.19ms)
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 03:16:57 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.2ms)
+Completed 200 OK in 4ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 03:16:57 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.16ms)
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 03:16:59 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.18ms)
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 1358)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 03:16:59 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.17ms)
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 03:18:30 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.22ms)
+Completed 200 OK in 4ms (Views: 0.7ms | ActiveRecord: 0.4ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 03:18:30 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.17ms)
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 03:18:35 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.17ms)
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 03:18:35 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.17ms)
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/availabilities" for 127.0.0.1 at 2022-08-12 03:18:47 +1000
+Processing by AvailabilitiesController#index as HTML
+  [1m[36mAvailability Load (0.3ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/controllers/availabilities_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.06ms)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.3ms | Allocations: 831)
+
+
+Started GET "/availabilities" for 127.0.0.1 at 2022-08-12 03:18:47 +1000
+Processing by AvailabilitiesController#index as HTML
+  [1m[36mAvailability Load (0.2ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/controllers/availabilities_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.06ms)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.2ms | Allocations: 831)
+
+
+Started GET "/availabilities" for 127.0.0.1 at 2022-08-12 03:22:39 +1000
+Processing by AvailabilitiesController#index as HTML
+  [1m[36mAvailability Load (0.2ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/controllers/availabilities_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.06ms)
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.2ms | Allocations: 831)
+
+
+Started GET "/availabilities" for 127.0.0.1 at 2022-08-12 03:22:39 +1000
+Processing by AvailabilitiesController#index as HTML
+  [1m[36mAvailability Load (0.2ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/controllers/availabilities_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.07ms)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.2ms | Allocations: 831)
+
+
+Started GET "/availabilities" for 127.0.0.1 at 2022-08-12 03:22:41 +1000
+Processing by AvailabilitiesController#index as HTML
+  [1m[36mAvailability Load (0.2ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/controllers/availabilities_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.05ms)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.2ms | Allocations: 831)
+
+
+Started GET "/availabilities" for 127.0.0.1 at 2022-08-12 03:22:41 +1000
+Processing by AvailabilitiesController#index as HTML
+  [1m[36mAvailability Load (0.2ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/controllers/availabilities_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.05ms)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.2ms | Allocations: 831)
+
+
+Started POST "/availabilities" for ::1 at 2022-08-12 03:25:39 +1000
+Processing by AvailabilitiesController#create as */*
+  Parameters: {"first_name"=>"jack", "last_name"=>"jones", "store_id"=>1, "availability"=>{}}
+Completed 400 Bad Request in 1ms (ActiveRecord: 3.6ms | Allocations: 312)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: availability):
+  
+app/controllers/availabilities_controller.rb:50:in `availability_params'
+app/controllers/availabilities_controller.rb:18:in `create'
+Started GET "/availabilities" for ::1 at 2022-08-12 03:25:44 +1000
+Processing by AvailabilitiesController#index as */*
+  Parameters: {"first_name"=>"jack", "last_name"=>"jones", "store_id"=>1, "availability"=>{}}
+  [1m[36mAvailability Load (0.2ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/controllers/availabilities_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.09ms)
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.2ms | Allocations: 1104)
+
+
+Started POST "/availabilities" for 127.0.0.1 at 2022-08-12 03:25:56 +1000
+Processing by AvailabilitiesController#create as HTML
+  Parameters: {"barber_id"=>1, "start"=>"2022-08-11T17:25:55.397Z", "end"=>"2022-08-11T17:25:55.397Z", "availability"=>{"barber_id"=>1, "start"=>"2022-08-11T17:25:55.397Z", "end"=>"2022-08-11T17:25:55.397Z"}}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/availabilities_controller.rb:20:in `create'
+  [1m[36mBarber Load (1.2ms)[0m  [1m[34mSELECT "barbers".* FROM "barbers" WHERE "barbers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/availabilities_controller.rb:20:in `create'
+  [1m[36mAvailability Create (5.4ms)[0m  [1m[32mINSERT INTO "availabilities" ("barber_id", "created_at", "updated_at", "start", "end", "booked") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["barber_id", 1], ["created_at", "2022-08-11 17:25:57.089512"], ["updated_at", "2022-08-11 17:25:57.089512"], ["start", "2022-08-11 17:25:55.397000"], ["end", "2022-08-11 17:25:55.397000"], ["booked", false]]
+  ↳ app/controllers/availabilities_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (3.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/availabilities_controller.rb:20:in `create'
+[active_model_serializers] Rendered AvailabilitySerializer with ActiveModelSerializers::Adapter::Attributes (0.45ms)
+Completed 201 Created in 118ms (Views: 32.6ms | ActiveRecord: 13.8ms | Allocations: 15994)
+
+
+Started GET "/availabilities" for ::1 at 2022-08-12 03:26:04 +1000
+Processing by AvailabilitiesController#index as */*
+  Parameters: {"first_name"=>"jack", "last_name"=>"jones", "store_id"=>1, "availability"=>{}}
+  [1m[36mAvailability Load (0.3ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/controllers/availabilities_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.55ms)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.3ms | Allocations: 1171)
+
+
+Started GET "/availabilities" for ::1 at 2022-08-12 03:26:20 +1000
+Processing by AvailabilitiesController#index as */*
+  Parameters: {"first_name"=>"jack", "last_name"=>"jones", "store_id"=>1, "availability"=>{}}
+  [1m[36mAvailability Load (0.2ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/controllers/availabilities_controller.rb:8:in `index'
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 2.0ms | Allocations: 4461)
+
+
+  
+NameError (undefined local variable or method `barber' for AvailabilitySerializer:Class):
+  
+app/serializers/availability_serializer.rb:3:in `<class:AvailabilitySerializer>'
+app/serializers/availability_serializer.rb:1:in `<main>'
+app/controllers/availabilities_controller.rb:8:in `index'
+Started GET "/availabilities" for ::1 at 2022-08-12 03:26:27 +1000
+Processing by AvailabilitiesController#index as */*
+  Parameters: {"first_name"=>"jack", "last_name"=>"jones", "store_id"=>1, "availability"=>{}}
+  [1m[36mAvailability Load (0.1ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/controllers/availabilities_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mBarber Load (0.2ms)[0m  [1m[34mSELECT "barbers".* FROM "barbers" WHERE "barbers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/availabilities_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (44.44ms)
+Completed 200 OK in 97ms (Views: 93.7ms | ActiveRecord: 3.3ms | Allocations: 11722)
+
+
+Started GET "/availabilities" for 127.0.0.1 at 2022-08-12 03:27:37 +1000
+Processing by AvailabilitiesController#index as HTML
+  [1m[36mAvailability Load (0.2ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/controllers/availabilities_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mBarber Load (0.1ms)[0m  [1m[34mSELECT "barbers".* FROM "barbers" WHERE "barbers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/availabilities_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.8ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.4ms | Allocations: 2308)
+
+
+Started GET "/availabilities" for 127.0.0.1 at 2022-08-12 03:27:37 +1000
+Processing by AvailabilitiesController#index as HTML
+  [1m[36mAvailability Load (0.2ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/controllers/availabilities_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mBarber Load (0.1ms)[0m  [1m[34mSELECT "barbers".* FROM "barbers" WHERE "barbers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/availabilities_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.88ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.3ms | Allocations: 2126)
+
+
+Started GET "/availabilities" for 127.0.0.1 at 2022-08-12 03:28:02 +1000
+Processing by AvailabilitiesController#index as HTML
+  [1m[36mAvailability Load (0.2ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/controllers/availabilities_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mBarber Load (0.2ms)[0m  [1m[34mSELECT "barbers".* FROM "barbers" WHERE "barbers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/availabilities_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.08ms)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.4ms | Allocations: 2126)
+
+
+Started GET "/availabilities" for 127.0.0.1 at 2022-08-12 03:28:44 +1000
+Processing by AvailabilitiesController#index as HTML
+  [1m[36mAvailability Load (0.2ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/controllers/availabilities_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mBarber Load (0.2ms)[0m  [1m[34mSELECT "barbers".* FROM "barbers" WHERE "barbers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/availabilities_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.01ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.4ms | Allocations: 2125)
+
+
+Started GET "/availabilities" for 127.0.0.1 at 2022-08-12 03:28:48 +1000
+Processing by AvailabilitiesController#index as HTML
+  [1m[36mAvailability Load (0.2ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/controllers/availabilities_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mBarber Load (0.1ms)[0m  [1m[34mSELECT "barbers".* FROM "barbers" WHERE "barbers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/availabilities_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.93ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.4ms | Allocations: 2125)
+
+
+Started GET "/availabilities" for 127.0.0.1 at 2022-08-12 03:29:07 +1000
+Processing by AvailabilitiesController#index as HTML
+  [1m[36mAvailability Load (0.2ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/controllers/availabilities_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mBarber Load (0.1ms)[0m  [1m[34mSELECT "barbers".* FROM "barbers" WHERE "barbers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/availabilities_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.05ms)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.3ms | Allocations: 2125)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 03:29:34 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.2ms)
+Completed 200 OK in 36ms (Views: 1.0ms | ActiveRecord: 3.2ms | Allocations: 11652)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 03:29:34 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.17ms)
+Completed 200 OK in 4ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 1363)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 03:29:45 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.18ms)
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 03:29:45 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.2ms)
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 03:30:01 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.22ms)
+Completed 200 OK in 4ms (Views: 0.7ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 03:30:01 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.19ms)
+Completed 200 OK in 4ms (Views: 0.7ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/availabilities" for 127.0.0.1 at 2022-08-12 03:30:04 +1000
+Processing by AvailabilitiesController#index as HTML
+  [1m[36mAvailability Load (0.2ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/controllers/availabilities_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mBarber Load (0.2ms)[0m  [1m[34mSELECT "barbers".* FROM "barbers" WHERE "barbers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/availabilities_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.36ms)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.4ms | Allocations: 2175)
+
+
+Started GET "/availabilities" for 127.0.0.1 at 2022-08-12 03:30:04 +1000
+Processing by AvailabilitiesController#index as HTML
+  [1m[36mAvailability Load (0.2ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/controllers/availabilities_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mBarber Load (0.1ms)[0m  [1m[34mSELECT "barbers".* FROM "barbers" WHERE "barbers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/availabilities_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.09ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.3ms | Allocations: 2125)
+
+
+Started GET "/availabilities" for 127.0.0.1 at 2022-08-12 03:30:29 +1000
+Processing by AvailabilitiesController#index as HTML
+  [1m[36mAvailability Load (0.2ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/controllers/availabilities_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mBarber Load (0.2ms)[0m  [1m[34mSELECT "barbers".* FROM "barbers" WHERE "barbers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/availabilities_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.47ms)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.4ms | Allocations: 2126)
+
+
+Started GET "/availabilities" for 127.0.0.1 at 2022-08-12 03:30:35 +1000
+Processing by AvailabilitiesController#index as HTML
+  [1m[36mAvailability Load (0.2ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/controllers/availabilities_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mBarber Load (0.1ms)[0m  [1m[34mSELECT "barbers".* FROM "barbers" WHERE "barbers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/availabilities_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.15ms)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.3ms | Allocations: 2126)
+
+
+Started GET "/availabilities" for 127.0.0.1 at 2022-08-12 03:30:48 +1000
+Processing by AvailabilitiesController#index as HTML
+  [1m[36mAvailability Load (0.2ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/controllers/availabilities_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mBarber Load (0.2ms)[0m  [1m[34mSELECT "barbers".* FROM "barbers" WHERE "barbers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/availabilities_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (7.72ms)
+Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.4ms | Allocations: 2126)
+
+
+Started GET "/availabilities" for 127.0.0.1 at 2022-08-12 03:33:14 +1000
+Processing by AvailabilitiesController#index as HTML
+  [1m[36mAvailability Load (0.2ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/controllers/availabilities_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mBarber Load (0.1ms)[0m  [1m[34mSELECT "barbers".* FROM "barbers" WHERE "barbers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/availabilities_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.16ms)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.4ms | Allocations: 2126)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 03:34:10 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.25ms)
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 03:34:10 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.19ms)
+Completed 200 OK in 4ms (Views: 0.7ms | ActiveRecord: 0.4ms | Allocations: 1357)
+
+
+Started GET "/availabilities" for 127.0.0.1 at 2022-08-12 03:36:03 +1000
+Processing by AvailabilitiesController#index as HTML
+  [1m[36mAvailability Load (0.3ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/controllers/availabilities_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mBarber Load (0.1ms)[0m  [1m[34mSELECT "barbers".* FROM "barbers" WHERE "barbers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/availabilities_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.33ms)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.5ms | Allocations: 2125)
+
+
+Started GET "/availabilities" for 127.0.0.1 at 2022-08-12 03:36:04 +1000
+Processing by AvailabilitiesController#index as HTML
+  [1m[36mAvailability Load (0.2ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/controllers/availabilities_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mBarber Load (0.1ms)[0m  [1m[34mSELECT "barbers".* FROM "barbers" WHERE "barbers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/availabilities_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.29ms)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.4ms | Allocations: 2125)
+
+
+Started GET "/availabilities" for 127.0.0.1 at 2022-08-12 03:36:09 +1000
+Processing by AvailabilitiesController#index as HTML
+  [1m[36mAvailability Load (0.2ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/controllers/availabilities_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mBarber Load (0.1ms)[0m  [1m[34mSELECT "barbers".* FROM "barbers" WHERE "barbers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/availabilities_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.76ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.3ms | Allocations: 2125)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 03:36:28 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.28ms)
+Completed 200 OK in 6ms (Views: 0.9ms | ActiveRecord: 0.5ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 03:36:28 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.23ms)
+Completed 200 OK in 6ms (Views: 0.7ms | ActiveRecord: 0.5ms | Allocations: 1357)
+
+
+Started GET "/availabilities" for 127.0.0.1 at 2022-08-12 03:36:33 +1000
+Processing by AvailabilitiesController#index as HTML
+  [1m[36mAvailability Load (0.2ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/controllers/availabilities_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mBarber Load (0.1ms)[0m  [1m[34mSELECT "barbers".* FROM "barbers" WHERE "barbers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/availabilities_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.87ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.3ms | Allocations: 2126)
+
+
+Started GET "/availabilities" for 127.0.0.1 at 2022-08-12 03:36:33 +1000
+Processing by AvailabilitiesController#index as HTML
+  [1m[36mAvailability Load (0.2ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/controllers/availabilities_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mBarber Load (0.1ms)[0m  [1m[34mSELECT "barbers".* FROM "barbers" WHERE "barbers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/availabilities_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.04ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.4ms | Allocations: 2125)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 03:37:37 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.29ms)
+Completed 200 OK in 5ms (Views: 1.4ms | ActiveRecord: 0.4ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 03:37:37 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.25ms)
+Completed 200 OK in 4ms (Views: 0.8ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/availabilities" for 127.0.0.1 at 2022-08-12 03:37:38 +1000
+Processing by AvailabilitiesController#index as HTML
+  [1m[36mAvailability Load (0.2ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/controllers/availabilities_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mBarber Load (0.1ms)[0m  [1m[34mSELECT "barbers".* FROM "barbers" WHERE "barbers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/availabilities_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.74ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.3ms | Allocations: 2125)
+
+
+Started GET "/availabilities" for 127.0.0.1 at 2022-08-12 03:37:38 +1000
+Processing by AvailabilitiesController#index as HTML
+  [1m[36mAvailability Load (0.3ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/controllers/availabilities_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mBarber Load (0.1ms)[0m  [1m[34mSELECT "barbers".* FROM "barbers" WHERE "barbers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/availabilities_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.33ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.4ms | Allocations: 2125)
+
+
+Started GET "/barbers" for 127.0.0.1 at 2022-08-12 03:50:20 +1000
+Processing by BarbersController#index as HTML
+  [1m[36mBarber Load (0.5ms)[0m  [1m[34mSELECT "barbers".* FROM "barbers"[0m
+  ↳ app/controllers/barbers_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mStore Load (0.3ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/barbers_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mCACHE Store Load (0.0ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/barbers_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mCACHE Store Load (0.0ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/barbers_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mCACHE Store Load (0.0ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/barbers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (8.47ms)
+Completed 200 OK in 36ms (Views: 35.3ms | ActiveRecord: 17.8ms | Allocations: 9014)
+
+
+Started GET "/barbers" for 127.0.0.1 at 2022-08-12 03:50:20 +1000
+Processing by BarbersController#index as HTML
+  [1m[36mBarber Load (0.2ms)[0m  [1m[34mSELECT "barbers".* FROM "barbers"[0m
+  ↳ app/controllers/barbers_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/barbers_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mCACHE Store Load (0.0ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/barbers_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mCACHE Store Load (0.0ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/barbers_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mCACHE Store Load (0.0ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/barbers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (6.86ms)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.4ms | Allocations: 5565)
+
+
+Started GET "/barbers" for 127.0.0.1 at 2022-08-12 03:50:48 +1000
+Processing by BarbersController#index as HTML
+  [1m[36mBarber Load (0.3ms)[0m  [1m[34mSELECT "barbers".* FROM "barbers"[0m
+  ↳ app/controllers/barbers_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mStore Load (0.3ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/barbers_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mCACHE Store Load (0.0ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/barbers_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mCACHE Store Load (0.0ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/barbers_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mCACHE Store Load (0.0ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/barbers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (6.98ms)
+Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 0.7ms | Allocations: 5561)
+
+
+Started GET "/barbers" for 127.0.0.1 at 2022-08-12 03:50:48 +1000
+Processing by BarbersController#index as HTML
+  [1m[36mBarber Load (0.3ms)[0m  [1m[34mSELECT "barbers".* FROM "barbers"[0m
+  ↳ app/controllers/barbers_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/barbers_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mCACHE Store Load (0.0ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/barbers_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mCACHE Store Load (0.0ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/barbers_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mCACHE Store Load (0.0ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/barbers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (7.51ms)
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.5ms | Allocations: 5560)
+
+
+Started GET "/barbers" for 127.0.0.1 at 2022-08-12 03:52:53 +1000
+Processing by BarbersController#index as HTML
+  [1m[36mBarber Load (0.2ms)[0m  [1m[34mSELECT "barbers".* FROM "barbers"[0m
+  ↳ app/controllers/barbers_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/barbers_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mCACHE Store Load (0.0ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/barbers_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mCACHE Store Load (0.0ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/barbers_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mCACHE Store Load (0.0ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/barbers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (6.77ms)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.4ms | Allocations: 5560)
+
+
+Started GET "/barbers" for 127.0.0.1 at 2022-08-12 03:53:18 +1000
+Processing by BarbersController#index as HTML
+  [1m[36mBarber Load (0.2ms)[0m  [1m[34mSELECT "barbers".* FROM "barbers"[0m
+  ↳ app/controllers/barbers_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/barbers_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mCACHE Store Load (0.0ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/barbers_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mCACHE Store Load (0.0ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/barbers_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mCACHE Store Load (0.0ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/barbers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (9.75ms)
+Completed 200 OK in 12ms (Views: 11.7ms | ActiveRecord: 0.4ms | Allocations: 5562)
+
+
+Started GET "/barbers" for 127.0.0.1 at 2022-08-12 03:53:26 +1000
+Processing by BarbersController#index as HTML
+  [1m[36mBarber Load (0.2ms)[0m  [1m[34mSELECT "barbers".* FROM "barbers"[0m
+  ↳ app/controllers/barbers_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/barbers_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mCACHE Store Load (0.0ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/barbers_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mCACHE Store Load (0.0ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/barbers_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mCACHE Store Load (0.0ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/barbers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (6.13ms)
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.4ms | Allocations: 5561)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 03:55:15 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.19ms)
+Completed 200 OK in 4ms (Views: 0.6ms | ActiveRecord: 0.5ms | Allocations: 1421)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 03:55:15 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.17ms)
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.4ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 03:56:16 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.39ms)
+Completed 200 OK in 4ms (Views: 0.8ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 03:56:16 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.2ms)
+Completed 200 OK in 4ms (Views: 0.7ms | ActiveRecord: 0.4ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 03:56:22 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.17ms)
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 03:56:22 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.19ms)
+Completed 200 OK in 5ms (Views: 0.6ms | ActiveRecord: 1.9ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 03:56:44 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.19ms)
+Completed 200 OK in 4ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 1358)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 03:56:44 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.2ms)
+Completed 200 OK in 4ms (Views: 0.7ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 03:57:07 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.23ms)
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 03:57:07 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.27ms)
+Completed 200 OK in 4ms (Views: 0.7ms | ActiveRecord: 0.4ms | Allocations: 1357)
+
+
+Started GET "/barbers" for 127.0.0.1 at 2022-08-12 03:57:08 +1000
+Processing by BarbersController#index as HTML
+  [1m[36mBarber Load (0.3ms)[0m  [1m[34mSELECT "barbers".* FROM "barbers"[0m
+  ↳ app/controllers/barbers_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/barbers_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mCACHE Store Load (0.0ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/barbers_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mCACHE Store Load (0.0ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/barbers_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mCACHE Store Load (0.0ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/barbers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (7.98ms)
+Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.5ms | Allocations: 5560)
+
+
+Started GET "/barbers" for 127.0.0.1 at 2022-08-12 03:57:08 +1000
+Processing by BarbersController#index as HTML
+  [1m[36mBarber Load (0.3ms)[0m  [1m[34mSELECT "barbers".* FROM "barbers"[0m
+  ↳ app/controllers/barbers_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/barbers_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mCACHE Store Load (0.0ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/barbers_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mCACHE Store Load (0.0ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/barbers_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mCACHE Store Load (0.0ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/barbers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (7.29ms)
+Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.5ms | Allocations: 5560)
+
+
+Started GET "/barbers" for 127.0.0.1 at 2022-08-12 03:57:21 +1000
+Processing by BarbersController#index as HTML
+  [1m[36mBarber Load (0.3ms)[0m  [1m[34mSELECT "barbers".* FROM "barbers"[0m
+  ↳ app/controllers/barbers_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/barbers_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mCACHE Store Load (0.0ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/barbers_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mCACHE Store Load (0.0ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/barbers_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mCACHE Store Load (0.0ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/barbers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (5.95ms)
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.4ms | Allocations: 5561)
+
+
+Started GET "/barbers" for 127.0.0.1 at 2022-08-12 03:57:51 +1000
+Processing by BarbersController#index as HTML
+  [1m[36mBarber Load (0.3ms)[0m  [1m[34mSELECT "barbers".* FROM "barbers"[0m
+  ↳ app/controllers/barbers_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/barbers_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mCACHE Store Load (0.0ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/barbers_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mCACHE Store Load (0.0ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/barbers_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mCACHE Store Load (0.0ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/barbers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (5.93ms)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.4ms | Allocations: 5560)
+
+
+Started POST "/availabilities" for 127.0.0.1 at 2022-08-12 03:57:55 +1000
+Processing by AvailabilitiesController#create as HTML
+  Parameters: {"barber_id"=>4, "start"=>"2022-08-11T17:57:10.610Z", "end"=>"2022-08-11T17:57:10.610Z", "availability"=>{"barber_id"=>4, "start"=>"2022-08-11T17:57:10.610Z", "end"=>"2022-08-11T17:57:10.610Z"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/availabilities_controller.rb:20:in `create'
+  [1m[36mBarber Load (0.2ms)[0m  [1m[34mSELECT "barbers".* FROM "barbers" WHERE "barbers"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/availabilities_controller.rb:20:in `create'
+  [1m[36mAvailability Create (3.8ms)[0m  [1m[32mINSERT INTO "availabilities" ("barber_id", "created_at", "updated_at", "start", "end", "booked") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["barber_id", 4], ["created_at", "2022-08-11 17:57:55.801573"], ["updated_at", "2022-08-11 17:57:55.801573"], ["start", "2022-08-11 17:57:10.610000"], ["end", "2022-08-11 17:57:10.610000"], ["booked", false]]
+  ↳ app/controllers/availabilities_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (3.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/availabilities_controller.rb:20:in `create'
+[active_model_serializers] Rendered AvailabilitySerializer with ActiveModelSerializers::Adapter::Attributes (0.46ms)
+Completed 201 Created in 17ms (Views: 1.4ms | ActiveRecord: 8.0ms | Allocations: 3679)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 03:59:09 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.19ms)
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2022-08-12 03:59:10 +1000
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:47:in `set_store'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:50:in `check_ownership'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Store (0.19ms)
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.3ms | Allocations: 1357)
+
+
+Started GET "/barbers" for 127.0.0.1 at 2022-08-12 04:00:15 +1000
+Processing by BarbersController#index as HTML
+  [1m[36mBarber Load (0.2ms)[0m  [1m[34mSELECT "barbers".* FROM "barbers"[0m
+  ↳ app/controllers/barbers_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/barbers_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mCACHE Store Load (0.0ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/barbers_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mCACHE Store Load (0.0ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/barbers_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mCACHE Store Load (0.0ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/barbers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (26.35ms)
+Completed 200 OK in 29ms (Views: 28.3ms | ActiveRecord: 0.4ms | Allocations: 5560)
+
+
+Started GET "/barbers" for 127.0.0.1 at 2022-08-12 04:00:15 +1000
+Processing by BarbersController#index as HTML
+  [1m[36mBarber Load (0.2ms)[0m  [1m[34mSELECT "barbers".* FROM "barbers"[0m
+  ↳ app/controllers/barbers_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/barbers_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mCACHE Store Load (0.0ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/barbers_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mCACHE Store Load (0.0ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/barbers_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mCACHE Store Load (0.0ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/barbers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (41.71ms)
+Completed 200 OK in 51ms (Views: 50.8ms | ActiveRecord: 0.4ms | Allocations: 5561)
+
+
+Started POST "/availabilities" for 127.0.0.1 at 2022-08-12 04:00:21 +1000
+Processing by AvailabilitiesController#create as HTML
+  Parameters: {"barber_id"=>3, "start"=>"2022-08-11T18:00:16.952Z", "end"=>"2022-08-11T18:00:16.952Z", "availability"=>{"barber_id"=>3, "start"=>"2022-08-11T18:00:16.952Z", "end"=>"2022-08-11T18:00:16.952Z"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/availabilities_controller.rb:20:in `create'
+  [1m[36mBarber Load (0.2ms)[0m  [1m[34mSELECT "barbers".* FROM "barbers" WHERE "barbers"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/availabilities_controller.rb:20:in `create'
+  [1m[36mAvailability Create (0.3ms)[0m  [1m[32mINSERT INTO "availabilities" ("barber_id", "created_at", "updated_at", "start", "end", "booked") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["barber_id", 3], ["created_at", "2022-08-11 18:00:21.422482"], ["updated_at", "2022-08-11 18:00:21.422482"], ["start", "2022-08-11 18:00:16.952000"], ["end", "2022-08-11 18:00:16.952000"], ["booked", false]]
+  ↳ app/controllers/availabilities_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (3.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/availabilities_controller.rb:20:in `create'
+[active_model_serializers] Rendered AvailabilitySerializer with ActiveModelSerializers::Adapter::Attributes (0.4ms)
+Completed 201 Created in 11ms (Views: 1.0ms | ActiveRecord: 3.8ms | Allocations: 3437)
+
+
