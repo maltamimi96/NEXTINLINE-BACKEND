@@ -5,7 +5,7 @@ class AvailabilitiesController < ApplicationController
   def index
     @availabilities = Availability.all
 
-    render json: @availabilities.transform_availability
+    render json: @availabilities
   end
 
   # GET /availabilities/1
