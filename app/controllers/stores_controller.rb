@@ -1,5 +1,7 @@
 class StoresController < ApplicationController
   before_action :set_store, only: %i[ show update destroy ]
+  before_action :check_ownership ,only: [:show, :destroy,:update]
+  before_action :authenticate_user,only: [:create ,:destroy,:update]
 
   # GET /stores
   def index
@@ -11,7 +13,7 @@ class StoresController < ApplicationController
 
   # GET /stores/1
   def show
-    render json: @store.user.username
+    render json: @store
   end
 
   # POST /stores
@@ -44,6 +46,11 @@ class StoresController < ApplicationController
     def set_store
       @store = Store.find(params[:id])
     end
+    def check_ownership
+      if current_user.id !=@store.user_id
+          render json:{error:"no permission"},status:401
+      end 
+  end
 
     # Only allow a list of trusted parameters through.
     def store_params
