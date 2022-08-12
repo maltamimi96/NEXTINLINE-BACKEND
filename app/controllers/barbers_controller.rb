@@ -3,7 +3,7 @@ class BarbersController < ApplicationController
 
   # GET /barbers
   def index
-    @barbers = Barber.all
+    @barbers = Barber.where(store_id:params[:store_id])
 
     render json: @barbers
   end
