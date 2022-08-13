@@ -18,7 +18,7 @@ resources :stores
 resources :availabilities
 resources :barbers
 resources :clients
-resources :hair_style
+resources :hair_styles
 
 
 

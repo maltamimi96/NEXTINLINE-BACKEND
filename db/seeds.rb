@@ -22,6 +22,12 @@ if Barber.count==0
     Barber.create(first_name:"John",last_name:"Doe",store_id:1)
 end
 
+if HairStyle.count==0
+    HairStyle.create(name:"Skin Fade",duration:20)
+    HairStyle.create(name:"Buzz Cut",duration:10)
+
+end
+
 
 
 
