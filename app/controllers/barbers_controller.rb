@@ -4,7 +4,6 @@ class BarbersController < ApplicationController
   # GET /barbers
   def index
     @barbers = Barber.where(store_id:params[:store_id])
-
     render json: @barbers
   end
 
@@ -43,6 +42,7 @@ class BarbersController < ApplicationController
     def set_barber
       @barber = Barber.find(params[:id])
     end
+    
 
     # Only allow a list of trusted parameters through.
     def barber_params
