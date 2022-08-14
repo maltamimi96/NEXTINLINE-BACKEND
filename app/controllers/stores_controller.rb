@@ -58,6 +58,6 @@ end
 
     # Only allow a list of trusted parameters through.
     def store_params
-      params.require(:store).permit(:name, :location, :user_id,:domain)
+      params.require(:store).permit(:name, :location, :user_id)
     end
 end

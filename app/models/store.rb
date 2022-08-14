@@ -3,5 +3,6 @@ class Store < ApplicationRecord
   has_many :clients
   has_many :bookings
   has_many :barbers
+  has_one :domain
 
 end
