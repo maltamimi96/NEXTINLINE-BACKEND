@@ -1,6 +1,7 @@
 class Question < ApplicationRecord
   belongs_to :category
   belongs_to :user
+  
 
   def transform_question
     return{

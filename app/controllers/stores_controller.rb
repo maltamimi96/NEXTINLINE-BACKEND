@@ -2,13 +2,12 @@ class StoresController < ApplicationController
   before_action :set_store, only: %i[ show update destroy ]
   before_action :check_ownership ,only: [:show, :destroy,:update]
   before_action :authenticate_user,only: [:create ,:destroy,:update]
+  # before_action :check_admin ,only: [:index]
 
   # GET /stores
   def index
     @stores = Store.all
-
     render json: @stores
-   
   end
 
   # GET /stores/1
@@ -51,6 +50,11 @@ class StoresController < ApplicationController
           render json:{error:"no permission"},status:401
       end 
   end
+  def check_admin
+    if !current_user.admin?
+        render json:{error:"no permission"},status:401
+     end
+end
 
     # Only allow a list of trusted parameters through.
     def store_params
