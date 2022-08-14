@@ -42,7 +42,9 @@ if Booking.count==0
 
 end
 
-
+if Domain.count==0
+    Domain.create(name:"test",store_id:1)
+end
 
 
 

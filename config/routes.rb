@@ -19,6 +19,8 @@ resources :availabilities
 resources :barbers
 resources :clients
 resources :hair_styles
+resources :domains
+
 
 scope '/auth' do
   post'/sign_up',to: 'users#create'
