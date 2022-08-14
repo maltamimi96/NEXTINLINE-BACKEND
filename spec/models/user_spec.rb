@@ -55,5 +55,21 @@ RSpec.describe User, type: :model do
         expect(user_two).to eq(false)
       end
     end
+
+    context 'calling data' do
+      before(:each) do
+        @user = User.create(email: 'test@example.com', username: 'Ray', password: 'password')
+      end
+
+      it "should return the user's store when called" do
+        store = Store.create(
+          name: 'Hello World Store',
+          location: 'Melbourne',
+          user_id: @user.id,
+          domain: 'www.example.com'
+        )
+        expect(@user.stores.first.name).to eq('Hello World Store')
+      end
+    end
   end
 end
