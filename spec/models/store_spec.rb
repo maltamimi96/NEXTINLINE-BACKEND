@@ -63,6 +63,7 @@ RSpec.describe Store, type: :model do
           user_id: @user.id,
           domain: 'www.example.com'
         )
+
         Client.create(
           first_name: 'John',
           last_name: 'Doe',
@@ -84,7 +85,16 @@ RSpec.describe Store, type: :model do
           email: 'test2@example.com',
           store_id: @store.id
         )
-        expect(@store.clients.length).to be(2)
+
+        Client.create(
+          first_name: 'Stan',
+          last_name: 'Smith',
+          phone: '0366666666',
+          email: 'test3@example.com',
+          store_id: @store.id
+        )
+
+        expect(@store.clients.length).to be(3)
       end
     end
   end
